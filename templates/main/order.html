@@ -1,0 +1,107 @@
+{% extends 'order_base.html' %}
+
+{% block title %}Live subscribers, likes, video views{% endblock %}
+{% block content %}
+    	<div class="content-wrap" style="padding-top: 0px;">
+    		<span id="sp_detils"> </span>
+    		<span id="sp_show_details">
+    			<section class="site-content container" style="width: 87%;">
+    				<div class="site-title" style="margin-top: 30px;">
+    					<div class="container" style="padding: 0px;">
+    					</div>
+    				</div>
+    				<div class="row">
+    					<div class="column twocol"></div>
+    					<div class="column eightcol">
+    						<h1 style="color: #0c0c0c;padding: 15px 10px;background: #eeeeee;font-weight: lighter !important;text-align: center;border: 1px solid #dfdfdf;margin-bottom: 0px;"> Enter Details for <span style="color: #28425f;text-transform:capitalize;">
+                                {{ order_by_id_fol.count_field }} {{ type }}</span></h1>
+    						<input type="hidden" value="followers" id="packagess">
+    						<form id="form_submit" method="post" action="checkout">
+    							<div class="details_form" style="border: 1px solid #dfdfdf;border-top-width: 0px;padding: 20px 25px;box-shadow: 2px 10px 5px #aaaaaa;">
+    								<div class="form-group" style="font-size: 15px;">
+    									<label for="username">Instagram Username:</label>
+    									<input type="text" style="width:100%;" name="username" id="username" class="input-text" required placeholder="Enter your Instagram Username">
+    								</div>
+    								<div class="form-group" style="font-size: 15px;">
+    									<label for="email">Your Email Address:</label>
+    									<input style="width:100%;" type="email" name="email" id="email" class="input-text" required placeholder="Enter your Email Address">
+    								</div>
+    								<div class="form-group" style=" display:none;">
+    									<label for="payment_method" style="font-size: 15px;">Payment Method: </label>
+    									<div class="row" style>
+    										<div class="column twelvecol" style="margin-top: 5px;margin-bottom: 5px;margin-left: 16px;">
+    											<input type="radio" checked="checked" id="paypal_btn" name="payment_method" value="checkoutcom" style="display: inline !important;width: initial !important;float: left;height: 15px;width: 15px !important;">
+    											<div style="margin-top: -5px;"> <label for="paypal_btn">
+    													<img src="/static/images/visa-and-mastercard-logo.png" alt="Visa and Master Card Logo" style="
+                                            width: 80px;
+                                            height: 20px;
+                                            margin-bottom: -4px;
+                                            display: inline-block;
+                                        "> Credit/Debit card </label>
+    											</div>
+    										</div>
+    										<style>
+    											apple-pay-button {
+    												--apple-pay-button-width: 150px;
+    												--apple-pay-button-height: 30px;
+    												--apple-pay-button-border-radius: 3px;
+    												--apple-pay-button-padding: 0px 0px;
+    												--apple-pay-button-box-sizing: border-box;
+    											}
+
+    										</style>
+    										<div class="column twelvecol" id="apl" style="margin-top: 8px;margin-bottom: 5px;margin-left: 16px;display:none;">
+    											<input type="radio" id="appl_btn" name="payment_method" value="applepay" style="display: inline !important;width: initial !important;float:left;margin-right:5px;margin-top:0px;height: 15px;width: 15px !important;">
+    											<div style="margin-top: -5px;">
+    												<label for="appl_btn" style="font-size: 14px;">
+    													<img src="/static/images/apple_logo.png" alt="Visa and Master Card Logo" style="
+                                            width: 19px;
+                                            height: 20px;
+                                            margin-bottom: 1px;
+                                            display: inline-block;
+                                            margin-left: 4px;"> Apple Pay <apple-pay-button buttonstyle="black" type="order" style="display:none;" locale="en-US" id="applePayButton">
+    													</apple-pay-button>
+    												</label>
+    											</div>
+    										</div>
+    									</div>
+    								</div>
+    								<div class="form-group text-center">
+    									<button type="button" class="cart-amount" style="margin-top: 25px;width:100%;font-size: 15px;" id="contnue" onclick="if (!window.__cfRLUnblockHandlers) return false; contnu();" data-cf-modified-a10a64c5b97f3a32460480e1->Continue To Checkout</button>
+    									<button type="submit" class="cart-amount" style="display:none;" id="contnuesub"></button>
+    									<hr>
+    									<p style="font-size: 12px;"><b>Note:</b> Delivery of your order will start automatically after successful payment. A order confirmation email will be sent with order number and details.</p>
+    								</div>
+    								<div class="form-group text-center">
+    									<div>
+    										<br><br>
+    										<img src="/static/images/secure-logo.png" alt="Secure Logo">
+    									</div>
+    								</div>
+    							</div>
+    						</form>
+    						<br>
+    						<hr>
+    						<div style="font-size: 13px;padding-left: 25px;padding-right: 25px;line-height: 2;">
+    							<b>
+    								<font color="red">Important Notice:</font> Please don't place order with any other vendor until your order is processing with us.
+    							</b>
+    							<h2>How to place order?</h2> Placing order on Expressfollowers is so simple, as we have designed a very simple and unique system. Please follow the instruction.<br /><br />
+    							<b>1.</b> Enter your Username only i.e. therock<br />
+    							<b>2.</b> Enter your working email address (to receive order details and link to check order status).</br>
+    							<b>3.</b> Then Click "Continue" button. <br />
+    							<b>4.</b> In case your order is regarding Likes, views, comments or custom comments, please select the media or post on which you want to deliver the order. Then click "Continue" button.<br />
+    							<b>5.</b> Review your order details on next page and click "Proceed to Payment" button.<br />
+    							<b>6.</b>On Payment page, complete the payment details and you will automatically redirect back to secure order detail page with your order number.<br />
+    							<b>7.</b> That's it....! Now your order is in our hands... Sit back and relax. Let's us work on it.<br /><br /><br />
+    						</div>
+    					</div>
+    					<div class="column twocol"></div>
+    				</div>
+    			</section>
+    		</span>
+    		<span id="sp_detils_payment"> </span>
+    		<span id="sp_del"> </span>
+    	</div>
+
+{% endblock %}

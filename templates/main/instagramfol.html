@@ -1,0 +1,562 @@
+{% extends 'base.html' %}
+
+{% block title %}Live subscribers, likes, video views{% endblock %}
+{% block content %}
+  <section class="hero hero-2">
+    <div align="center" class="hero__wrapper">
+      <div class="container">
+        <div class="row align-items-lg-center">
+          <div class="col-lg-12 order-2 order-lg-1">
+            <h1 class="main-heading color-black">Buy Instagram Followers Instantly!</h1>
+            <p class="paragraph">At <span>ExpressFollowers<sup>TM</sup></span>, buy real Instagram followers instantly
+              with guaranteed engagement.</p>
+            <div class="d-flex justify-content-center">
+              <div class="content text-center">
+                <div class="ratings">
+                  <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                  <div class="rating-text"> <span>4.9 ratings from 32 reviews</span> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="pricing" id="pricing">
+    <div class="pricing__wrapper">
+      <h2 align="center" class="package">Followers Packages</h2>
+      <div class="container">
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">What is the difference?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <b>High Quality Followers</b>
+                <p>These followers have profile pictures and few uploads or no uploads on their accounts. Auto-refill is
+                  enabled for five days only.</p>
+                <b>Premium Followers</b>
+                <p>Every account has many uploads and a good amount of fan following. There is little to No-Drop with a
+                  refill guarantee, and only for those who take their Instagram growth seriously.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" container-fluid pricingTable pt-90">
+          <div class="container">
+            <div class="row monthlyPriceList animated">
+                {% for price_field in list_inst_fol %}
+                    <div class="col-md-3">
+                        <div class="inner holder">
+                          <div class="hdng">
+                            <p>{{ price_field.count_field }} Followers</p>
+                          </div>
+                          <div class="price mt-5">
+                            <p><b>${{ price_field.new_price }}</b></p>
+                          </div>
+                          <div class="info">
+                            <p>Quality Followers</p>
+                            <p>Fast Delivery</p>
+                            <p>Only Username Required</p>
+                            <p>Privacy Protection</p>
+                            <p>Customer Satisfaction</p>
+                            <p>24/7 Support</p>
+                            <p><b>{{ price_field.discount }}% Discount</b></p>
+                          </div>
+                          <div class="btn">
+                            <a href="{% url 'main:instagramfolbuy' price_field.id %}" class="readon">Buy Now</a>
+                          </div>
+                        </div>
+                </div>
+                {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="step">
+    <div class="step__wrapper">
+      <div class="container">
+        <h2 class="section-heading color-black">How To Buy Followers On Instagram?</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="step__box">
+              <div class="content">
+                <h3>STEP 1 <span>Package</span></h3>
+                <p class="paragraph dark">Select your desired Instagram followers package from above.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="step__box">
+              <div class="content">
+                <h3>STEP 2 <span>Details</span></h3>
+                <p class="paragraph dark">Enter your Instagram username and email address, then click next.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="step__box">
+              <div class="content">
+                <h3>StEP 3 <span>Magic</span></h3>
+                <p class="paragraph dark">Check your order details, checkout, sit back, relax, and enjoy your follower
+                  count.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="pricing" id="pricing">
+    <div class="pricing__wrapper">
+      <div class="container">
+        <h2 class="section-heading color-black">Buy Real Active Instagram Followers</h2>
+        <div class="row">
+          <p></p>
+        </div>
+        <div class="row align-items-lg-center">
+          <div class="col-lg-12 order-2 order-lg-1">
+            <div class="paragraph dark">
+              <p class="dark_text"><img
+                  src="https://expressfollowers.com/assets/images/buy-real-active-instagram-followers.png"
+                  class="img-fluid img-thumbnail" alt="Buy real active instagram followers"></p>
+              <p class="dark_text">Instagram currently has more than 1.35 billion monthly users, increasing daily. Over
+                95% of the world's entire businesses, 99% of celebrities, and 28.88% of the world's population have
+                their account on Instagram.</p>
+              <p class="dark_text">In these circumstances, starting a new personal Instagram account or page for your
+                company may be a good idea. Even if you already have an established page on Instagram, Instagram
+                marketing can always be challenging for it to bring targeted leads. Engagement rate, organic followers,
+                reach, and building and maintaining a massive fan following are all part of this challenge.</p>
+              <p class="dark_text">To solve this problem, here comes <a
+                  href="https://expressfollowers.com/">ExpressFollowers.com</a>, Where you can <strong>buy real
+                  Instagram followers</strong> at an affordable price. It will save time and energy and increase your
+                social media influence overnight.</p>
+              <h2 class="section-heading-article">Benefits of Buying Real Instagram Followers</h2>
+              <p class="dark_text">Following are the benefits of <strong>buying IG followers</strong>.</p>
+              <img src="https://expressfollowers.com/assets/images/buy-real-active-Instagram-followers.png" width="450"
+                height="450" class="img-fluid rounded float-right" alt="Buy real active Instagram followers">
+              <h3 class="color-black">Increase Your Fame</h3>
+              <p class="dark_text">It doesn't matter whether a business, celebrity, or individual, everyone wants to
+                increase their social media fame and have a viral Instagram profile. If you wish to get targeted
+                marketing leads for a business, spread your message across the globe, or have a massive number of
+                followers. SMM-EU stands first and is always the first choice to get real and active
+                followers.</p>
+              <h3 class="color-black">Brand Awareness</h3>
+              <p class="dark_text">You are running a successful business. However, you have either none or a low social
+                media presence. Please remember that you are losing 50% of revenue and targeted leads.</p>
+              <p class="dark_text">"When you <strong>buy followers on Instagram</strong> from <a
+                  href="https://expressfollowers.com/">SMM-EU</a>, you can connect with the right/targeted
+                audience." </p>
+              <p class="dark_text"><strong>Note</strong>: "ExpressFollowers.com will give you a massive fan following to
+                build your brand awareness instantly and Instagram success."</p>
+              <h3 class="color-black">Spread Your Words</h3>
+              <p class="dark_text">As mentioned above, 28.88% of the world's population uses Instagram regularly. In
+                this age of the global village, the world has become a small place. However, it takes a lot of time to
+                spread your word and reach everyone.</p>
+              <p class="dark_text"><a href="https://expressfollowers.com/">ExpressFollowers.com</a> can help you to
+                spread your words and message to your target audience. This way, your message will be seen by as many
+                people as possible.</p>
+              <h3 class="color-black">Build Social Proof</h3>
+              <p class="dark_text">Just think! If you are a celebrity, a business even an individual with fewer
+                followers on Instagram, who will follow you and give you importance? Remember, most viewers, audiences,
+                and fans consider your current followers count when deciding to follow you or skip your profile.</p>
+              <p class="dark_text"><strong>Pro Tip</strong>: "It's a reality of social media: without having enough
+                followers, nobody will pay attention to you or your business." In this situation, the best thing is to
+                <strong>buy Instagram followers</strong> from ExpressFollowers.com to boost your social proof instantly.
+              </p>
+              <p class="dark_text">"It's a reality of social media: without having enough followers, nobody is going to
+                pay attention to you or your business."</p>
+              <p class="color-black"><img
+                  src="https://expressfollowers.com/assets/images/buy-instagram-followers-quality-guaranteed.png"
+                  width="350" height="350" class="img-fluid rounded float-left"
+                  alt="Buy Instagram followers with guaranteed quality"></p>
+              <h3 class="color-black">Activate Instagram Algorithm</h3>
+              <p class="dark_text">Instagram constantly evolves, introducing many changes and improvements to its
+                algorithm. These changes continue to curate and organize how to show a suitable Instagram feed on the
+                Explore page. They also ensure that relevant content will present to the right user.</p>
+              <p class="dark_text">There is only one way to activate the Instagram algorithm. You must have a massive
+                number of followers on your profile or page. You must also have tens of thousands of <a
+                  href="https://expressfollowers.com/buy-instagram-likes/">Instagram likes</a> on your posts. </p>
+              <p class="dark_text">When you <a href="https://expressfollowers.com/buy-instagram-followers/">buy
+                  Instagram followers and likes</a>, Instagram's algorithm will start displaying your content and post
+                on the Explore page and to the right audience.</p>
+              <h2 class="section-heading-article">Why ExpressFollowers?</h2>
+              <p class="dark_text">"The answer is simple:" We have been in the market since 2015. We have over seven
+                years of experience in Instagram marketing. And have an AI-based advanced system that constantly updates
+                to provide you with guaranteed <strong>real Instagram followers</strong> at affordable prices.</p>
+              <p class="dark_text">To beat our competition, we have the following unique things.</p>
+              <ol>
+                <li>Simple 3-step checkout system.</li>
+                <li>Our system provides you with guaranteed privacy.</li>
+                <li>Highest quality of real IG followers (real followers from real accounts).</li>
+                <li>Instant order starts (usually, order starts in seconds).</li>
+              </ol>
+              <p class="dark_text">Whether you buy Instagram followers, <a
+                  href="https://expressfollowers.com/buy-instagram-likes/">likes</a>, <a
+                  href="https://expressfollowers.com/buy-instagram-comments/">comments</a>, or <a
+                  href="https://expressfollowers.com/buy-instagram-views/">views</a>, our system and experts will
+                deliver your service with the highest quality standards and real results. Every order placed with us
+                will start immediately with guaranteed no fake or bot followers. While on the other hand, our
+                competitors may take hours or sometimes even days to start your order.</p>
+              <p class="dark_text">We have a dedicated expert team to support you anytime, and our customer support team
+                is available 24/7.</p>
+              <h2 class="section-heading-article">Our Features</h2>
+              <img src="https://expressfollowers.com/assets/images/buy-real-Instagram-followers.png" width="450"
+                height="450" class="img-fluid rounded float-right" alt="Buy real Instagram followers">
+              <p class="dark_text">As mentioned above, we offer the following with seven years of experience with every
+                order.</p>
+              <h3 class="color-black">Instant Delivery</h3>
+              <p class="dark_text">We ensure every order will start within seconds after successful payment as we are
+                famous for fast delivery.</p>
+              <h3 class="color-black">Order Tracking</h3>
+              <p class="dark_text">Our system enables you to track your order. After successful payment, you will get an
+                email with order details and a link to your order tracking URL. You can track your order with <a
+                  href="https://expressfollowers.com/web/order_tracking">this link</a>. Enter your order number and the
+                email address you used while placing the order.</p>
+              <h3 class="color-black">Privacy Protection</h3>
+              <p class="dark_text">We will never share your details with anyone on any condition. Remember, we only
+                require just your Instagram username and email address to process and send you your order details.</p>
+              <p class="dark_text">"We will never ask for the password or any personal details. We suggest you don't
+                share your password with anyone or any app."</p>
+              <h3 class="color-black">Mind Satisfaction</h3>
+              <p class="dark_text">We provide the highest quality Instagram followers and 100% mind satisfaction with
+                every order. We know many of our competitors provide fake followers (bot followers) that will stay in
+                your account and never interact with your content.</p>
+              <p class="dark_text">That's why we will ensure that each follower you get from us must be authentic and of
+                the highest quality.</p>
+              <h3 class="color-black">Affordable Price</h3>
+              <p class="dark_text">Remember, quality comes with a price, but here at ExpressFollowers, we will deliver
+                real Instagram followers and quality at a very affordable price. We have designed many reasonable
+                <strong>Instagram followers packages</strong> according to customer needs. </p>
+              <p class="dark_text">You can <strong>buy Instagram followers cheap</strong> and real with instant delivery
+                and guaranteed results.</p>
+              <h3 class="color-black">Drop Protection</h3>
+              <p class="dark_text">Every order comes with drop protection. There is no drop in purchased followers or
+                sometimes a minimal drop in some orders. In this case, new followers will follow you automatically if
+                any followers drop or leave your Instagram profile. Even you have drop protection where you can request
+                to refill your account within the guarantee period.</p>
+              <h3 class="color-black">Secure Payment Gateway</h3>
+              <p class="dark_text">At ExpressFollowers.com, we offer many different payment gateways to make the
+                purchase process as simple as possible. Some payment options are PayPal, Credit Cards, Crypto, Payoneer,
+                and web money. All our payment gateways are 100% secure with 256-bit SSL and PCI-DSS security.
+                Furthermore, we never store any payment information.</p>
+              <h3 class="color-black">24/7 Customers Support</h3>
+              <p class="dark_text">As mentioned above, we always have a dedicated customer service team online to solve
+                your queries and provide customer support. If you need a tailor-made package, please don't hesitate to
+                get in touch. </p>
+              <h2 class="section-heading-article">Final Key Points</h2>
+              <p class="dark_text">Following are the bottom lines that you need to consider.</p>
+              <ol>
+                <li>Now you have the exact idea of the benefits of buying followers for Instagram, but always keep in
+                  mind to stay cautious when choosing a vendor.</li>
+                <li>Every business or individual must have solid social proof to get credibility and visibility.</li>
+                <li>Always focus on buying real Instagram followers instead of buying fake bots.</li>
+                <li>Always check the growth provider/vendor's feedback and reviews before purchasing.</li>
+                <li>On ExpressFollowers.com, you will never risk getting your account banned when you <a
+                    href="https://expressfollowers.com/buy-instagram-followers/">buy real active followers</a>, <a
+                    href="https://expressfollowers.com/buy-instagram-likes/">likes</a>, <a
+                    href="https://expressfollowers.com/buy-automatic-instagram-likes/">auto IG likes</a>, <a
+                    href="https://expressfollowers.com/buy-instagram-comments/">comments</a>, and <a
+                    href="https://expressfollowers.com/buy-instagram-views/">views</a>.</li>
+                <li>All our services work perfectly, and you will get your followers in promised time and your Instagram
+                  growth at the highest level.</li>
+                <li>Use your Instagram fan following to get more organic followers on Facebook, Twitter, and other
+                  social media accounts or platforms. </li>
+                <li>Remember! Content is king; keep posting good quality content to engage your audience.</li>
+              </ol>
+
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/N3yD8iSHcGE"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="questions" id="faq">
+    <div class="questions__wrapper">
+      <div class="container">
+        <h2 class="section-heading color-black">Buy Real Instagram Followers from Express Followers</h2>
+        <p align="center" class="paragraph dark">We have served more than 47000 clients. Our customers and many
+          Instagram influencers trust us as the best website that delivers genuine Instagram followers.</p>
+        <div class="row">
+          <p></p>
+        </div>
+        <div class="row align-items-lg-center">
+          <div class="col-lg-12 order-2 order-lg-1">
+            <div id="accordion">
+              <div class="card" id="card-1">
+                <div class="card-header" id="heading-1">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true"
+                      aria-controls="collapse-1">
+                      Why Should I buy Instagram followers?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">As stated above, you can buy Instagram followers to increase your fame and
+                      brand awareness, spread your words across the globe, social proof, and activate the Instagram
+                      algorithm. Remember one rule! If you have a massive number of followers, everyone would love to
+                      press follow button on your profile to follow you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-2">
+                <div class="card-header" id="heading-2">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-2"
+                      aria-expanded="false" aria-controls="collapse-2">
+                      What is the delivery time and speed?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">The simple answer is "INSTANT." As soon as you successfully place the order,
+                      our system starts working immediately and delivering followers in just a few seconds. We only
+                      required one thing; your account must be public to receive <strong>Instagram followers
+                        instantly</strong>.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-3">
+                <div class="card-header" id="heading-3">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-3"
+                      aria-expanded="false" aria-controls="collapse-3">
+                      Will my account get banned?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">We are the only one to provide real Instagram followers as per your need. Your
+                      account will never get banned from our services. We have been in the market since 2015, and until
+                      now, we have not received a single complaint.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-4">
+                <div class="card-header" id="heading-4">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-4"
+                      aria-expanded="false" aria-controls="collapse-4">
+                      Which Instagram Followers Package Should I Buy?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">On ExpressFollowers.com, we offer many different packages which fit your need.
+                      Currently, we have two kinds of followers: high-quality and premium. If your account already has
+                      good growth, and you want a little boost, buy high-quality followers. On the other hand, premium
+                      followers for those who wish to have organic growth and are serious about their engagement rate.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-5">
+                <div class="card-header" id="heading-5">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-5"
+                      aria-expanded="false" aria-controls="collapse-5">
+                      What Information is required to place an order?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-5" class="collapse" aria-labelledby="heading-5" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">We at ExpressFollowers.com only need your Instagram username and email address.
+                      We will never ask for the password or any other personal details. Please keep your Instagram
+                      account public to receive followers instantly.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-6">
+                <div class="card-header" id="heading-6">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-6"
+                      aria-expanded="false" aria-controls="collapse-6">
+                      Best website to buy Instagram followers in 2023?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-6" class="collapse" aria-labelledby="heading-6" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">Our clients have rated SMM-EU as the number #1 and the best
+                      website to buy Instagram followers in 2023. We base our system on artificial intelligence and keep
+                      updating and tweaking it to deliver real and high-quality Instagram followers instantly. We have
+                      tailor-made affordable Instagram follower packages which suit your need.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-7">
+                <div class="card-header" id="heading-7">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-7"
+                      aria-expanded="false" aria-controls="collapse-7">
+                      Can I buy Instagram followers and likes at the same time?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-7" class="collapse" aria-labelledby="heading-7" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">Yes, you can. We highly recommend <a
+                        href="https://expressfollowers.com/buy-instagram-likes/">buying Instagram likes</a> and
+                      followers simultaneously to keep your post impressions, likes, and engagement as per your account
+                      fan following.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-8">
+                <div class="card-header" id="heading-8">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-8"
+                      aria-expanded="false" aria-controls="collapse-8">
+                      Can I buy Instagram followers with PayPal?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-8" class="collapse" aria-labelledby="heading-8" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">Yes, not only PayPal, but you can buy IG followers with crypto, Payoneer,
+                      credit card, WebMoney, and many other payment gateways.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-14">
+                <div class="card-header" id="heading-8">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-14"
+                      aria-expanded="false" aria-controls="collapse-8">
+                      How to buy 50 Instagram followers?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-14" class="collapse" aria-labelledby="heading-8" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">It is easy to have 50 followers on Instagram. You can <a
+                        href="https://expressfollowers.com/buy-50-insta-followers/">buy 50 Insta followers</a> for just
+                      $0.99 from us.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-9">
+                <div class="card-header" id="heading-9">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-9"
+                      aria-expanded="false" aria-controls="collapse-9">
+                      Can I buy country-specific Instagram followers?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-9" class="collapse" aria-labelledby="heading-9" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">Yes, you can. We offer to buy country-specific Instagram followers from the
+                      USA, Canada, the UK, and many other targeted countries. Please select your desired package from
+                      the list above or contact us with specific needs.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-10">
+                <div class="card-header" id="heading-10">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-10"
+                      aria-expanded="false" aria-controls="collapse-10">
+                      How much is it to buy followers on Instagram?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-10" class="collapse" aria-labelledby="heading-10" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">As stated above, we have the lowest and very affordable prices in the entire
+                      market. You can buy followers for $0.79 per 100 followers and up to $129 for 150,000 Instagram
+                      followers.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-11">
+                <div class="card-header" id="heading-11">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-11"
+                      aria-expanded="false" aria-controls="collapse-11">
+                      How to get 1000 Instagram followers in 5 minutes?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-11" class="collapse" aria-labelledby="heading-11" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">It is as easy as 1,2,3. Please check our <a
+                        href="https://expressfollowers.com/buy-1000-instagram-followers/">1000 Instagram followers</a>
+                      package from the packages mentioned above. We will deliver you 1000 followers on Instagram in less
+                      than 5 minutes.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-12">
+                <div class="card-header" id="heading-12">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-12"
+                      aria-expanded="false" aria-controls="collapse-12">
+                      How to get Instagram followers organically?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-12" class="collapse" aria-labelledby="heading-12" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">On ExpressFollowers, we offer premium IG followers who are 100% authentic. Once
+                      you have many Instagram followers, your account will grow organically and automatically.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card" id="card-13">
+                <div class="card-header" id="heading-13">
+                  <h5 class="mb-0 hidden">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-13"
+                      aria-expanded="false" aria-controls="collapse-13">
+                      How to get 10,000 Instagram followers?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapse-13" class="collapse" aria-labelledby="heading-13" data-parent="#accordion">
+                  <div class="card-body">
+                    <p class="paragraph">On ExpressFollowers, you can get <a
+                        href="https://expressfollowers.com/buy-10000-instagram-followers/">10,000 Instagram
+                        followers</a> in less than a few hours with 24/7 customer support and guaranteed high quality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
