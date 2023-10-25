@@ -1,5 +1,5 @@
-smm_eu/__pycache__/*.pyc
-smm_eu/apps/main/migrations/__pycache__/*.pyc
+# smm_eu/__pycache__/*.pyc
+# smm_eu/apps/main/migrations/__pycache__/*.pyc
 .vscode/extensions.json
 .vscode/launch.json
 .ipynb_checkpoints/manage-checkpoint.py
@@ -7,6 +7,6 @@ smm_eu/apps/main/migrations/__pycache__/*.pyc
 .ipynb_checkpoints/untitled-checkpoint.py
 .vscode/extensions.json
 .vscode/settings.json
-smm_eu/__pycache__/*.pyc
-smm_eu/apps/main/pycache/*.pyc
+# smm_eu/__pycache__/*.pyc
+# smm_eu/apps/main/pycache/*.pyc
 .vscode/extensions.json
