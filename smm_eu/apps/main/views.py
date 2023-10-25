@@ -1,6 +1,7 @@
+from django.http import Http404
 from django.shortcuts import render
+
 from .models import Products, Order
-from django.http import Http404, HttpResponseRedirect
 
 
 def index(request):
@@ -16,8 +17,8 @@ def instagramfol(request):
 
 
 def instagramlike(request):
-    list_inst_views = Products.objects.filter(type=2)
-    return render(request, 'main/instagram/instagramlike.html', {'list_inst_views': list_inst_views})
+    list_inst_like = Products.objects.filter(type=2)
+    return render(request, 'main/instagram/instagramlike.html', {'list_inst_like': list_inst_like})
 
 
 def instagramautolike(request):

@@ -1,0 +1,721 @@
+{% extends 'base.html' %}
+
+{% block title %}Live subscribers, likes, video views{% endblock %}
+{% block content %}
+      <section class="hero hero-2">
+        <div align="center" class="hero__wrapper">
+            <div class="container">
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <h1 class="main-heading color-black">Buy Automatic Instagram Likes</h1>
+                        <p class="paragraph">On <span>Smm-eu.com<sup>TM</sup></span>, you can buy auto Instagram likes
+                            instantly for 30 days with just three clicks.</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="content text-center">
+                                <div class="ratings">
+                                    <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> </div>
+                                    <div class="rating-text"> <span>4.9 ratings from 9 reviews</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="modal-backdrop fade show"></div>
+    <section class="pricing" id="pricing">
+        <div class="pricing__wrapper">
+            <h2 align="center" class="package">Followers Packages</h2>
+            <div class="container">
+                <div align="center">
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal"
+                        style="display:none;">
+                        What is the difference?
+                    </button>
+                </div>
+                <div class="modal fade show"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-modal="true" style="padding-right: 17px; display: block;">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Inclusion in the work within 3-5 minutes, after payment.<br> To check the correctness of the autorun, we recommend posting the publication 10 minutes after payment.</h5>
+									<button type="button" class="close" data-dismiss="modal" id="destory_modal" aria-label="Close">
+										<span aria-hidden="true">×</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<hr>
+											</div>
+											<div class="col-sm-7 col-9 col-lg-9">
+												<span class="font-weight-bold">{{ order_by_id_autolike.count_field }} Likes/Per Post</span>
+											</div>
+											<div class="col-sm-5 col-3 col-lg-3">
+												<span class="font-weight-bold" id="priice">{{ order_by_id_autolike.new_price }}$/50 posts</span>
+											</div>
+											<div class="col-sm-12">
+												<hr>
+											</div>
+										</div>
+										<div style="margin-top: 3.299999999999997rem;" class="row" id="link-input">
+											<label for="#" style="font-size: 1.0rem;" class="col-sm-12">Enter the link to your Instagram profile. (Profile must be open)</label>
+											<input type="text" class="form-control" placeholder="https://instagram.com/username" style="text-align: left;" name="url_link" id="url_link" required="">
+											<div class="invalid-feedback d-none">Required field</div>
+											<div class="bg-danger text-white p-3 d-none w-100 text-center" id="error_text">
+												<p>Please fill in all required fields</p>
+											</div>
+										</div>
+									</div>
+									<input type="hidden" name="p_id" id="p_id" value="23">
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success" onclick="checkOut(event);" id="btn_chekout">Next</button>
+								</div>
+								<div class="d-none" id="hidden_form"></div>
+							</div>
+						</div>
+					</div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__wrapper">
+            <div class="container">
+                <h2 class="section-heading color-black">How to Buy Auto Instagram Likes?</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="step__box">
+                            <div class="content">
+                                <h3>STEP 1<span>Package</span></h3>
+                                <p class="paragraph dark">We have wide arrage of packages, select your desired package.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="step__box">
+                            <div class="content">
+                                <h3>STEP 2<span>Details</span></h3>
+                                <p class="paragraph dark">Enter you Instagram username and email address and click next.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="step__box">
+                            <div class="content">
+                                <h3>StEP 3<span>Magic</span></h3>
+                                <p class="paragraph dark">Check order details, checkout and sit back, relax and enjoy
+                                    magic.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="feature" id="intro">
+        <div class="container">
+            <h2 class="section-heading color-black">How Automatic Instagram Likes Work?</h2>
+            <p align="center" class="paragraphhow">On <strong>Smm-eu.com<sup>TM</sup></strong>, automatic Instagram
+                likes are super easy to use.</p>
+            <div class="row">
+                <p></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature__box feature__box--1">
+                        <div class="icon icon-1">
+                            <i class="fa fa-upload"></i>
+                        </div>
+                        <div class="feature__box__wrapper">
+                            <div class="feature__box--content feature__box--content-1">
+                                <h3>Upload Photo or Video to Instagram</h3>
+                                <p class="paragraph dark">You just need to upload photos or a video to your Instagram
+                                    account by using your mobile or computer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature__box feature__box--2">
+                        <div class="icon icon-2">
+                            <i class="fa fa-crosshairs"></i>
+                        </div>
+                        <div class="feature__box__wrapper">
+                            <div class="feature__box--content feature__box--content-2">
+                                <h3>Automatically media detected</h3>
+                                <p class="paragraph dark">Out artifical intelligence based system will detect your newly
+                                    uploaded media in 60 seconds.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature__box feature__box--3">
+                        <div class="icon icon-3">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="feature__box__wrapper">
+                            <div class="feature__box--content feature__box--content-3">
+                                <h3>Likes Delivered</h3>
+                                <p class="paragraph dark">Instagram likes delivered to your new uploaded post
+                                    automatically with free IG views if its a video post.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="growth" id="feature">
+        <div class="growth__wrapper">
+            <div class="container">
+                <h2 class="section-heading color-black">Smm-eu.com<sup>TM</sup> Auto Likes Features</h2>
+                <div class="row">
+                    <p></p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Real Likes</h3>
+                                <p class="paragraph dark">We deliver Instagram auto likes from real Instagram accounts
+                                    and just required your username only.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-eye"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Matching Free Views</h3>
+                                <p class="paragraph dark">You will get free Instagram views and auto Instagram likes if
+                                    you uploaded a video as per same auto likes pacakge.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-crosshairs"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Auto Detection</h3>
+                                <p class="paragraph dark">As soon as you loaded a new media, our AI based system will
+                                    detect new media in just 60 seconds.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-icons"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Random Likes</h3>
+                                <p class="paragraph dark">Every post will get different amount of IG likes. If package
+                                    is 250 then every post will get 250 to 260 likes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-dollar-sign"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Money Back Guarantee</h3>
+                                <p class="paragraph dark">We will never ask any question and refund full amount if any
+                                    of order is not delivered on time with quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-user-astronaut"></i>
+                            </div>
+                            <div class="content">
+                                <h3>24/7 Customer Support</h3>
+                                <p class="paragraph dark">We have expert with over 7+ years experience, don't hesitate
+                                    to get in touch with them if you have question.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pricing" id="pricing">
+        <div class="pricing__wrapper">
+            <div class="container">
+                <h2 class="section-heading color-black">Buy Automatic Likes for Instagram to Automate Growth</h2>
+                <div class="row">
+                    <p></p>
+                </div>
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <div class="paragraph dark">
+                            <p class="dark_text"><img
+                                    src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/exclusive-quality-buy-instagram-automatic-likes.png"
+                                    width="200" height="200" class="rounded float-left"
+                                    alt="Buy Instagram automatic likes with guaranteed quality">Are you striving to get
+                                likes and <a href="https://smm-eu.com/">comments on your posts on Instagram</a>? Why
+                                make so much effort when you can get <strong>auto Instagram likes</strong> on every post
+                                you upload anytime and from anywhere? Wondering how's that so easy?</p>
+                            <p class="dark_text"><strong>Buy automatic Instagram likes</strong> from Smm-eu.com to rise
+                                and shine swiftly because the Instagram algorithm only brings attention to posts that
+                                get likes and <a href="https://smm-eu.com/">comments</a> instantly. It's easy to outrank
+                                your competitor business, brands, and celebrities on Instagram by getting lots of likes
+                                every time you post a video or photo.</p>
+                            <p class="dark_text">Instagram is growing bigger than ever because thousands of photos get
+                                live every second, and users have a lot to see. However, the big brands and influencers
+                                perform much better because they get a response, exposure, and reach. The only way out
+                                for an entrant is to enhance their response rate with fast <a
+                                    href="https://smm-eu.com/">IG likes</a>. And getting so many likes manually is a
+                                challenging and time taking job. So, to solve this problem, Smm-eu.com has the
+                                <strong>best automated Instagram likes</strong> that work with the speed of light!</p>
+                            <h2 class="section-heading-article">How to Get Auto IG Likes?</h2>
+                            <p class="dark_text">It's as easy as pie; you only must share your Instagram handle with us
+                                and choose the number of likes you want on your future posts. Our system will save and
+                                auto-detect it whenever you publish a new photo or video. Within seconds, you receive a
+                                flood of IG likes on your latest posts. We have a magical yet automated system to do
+                                that for you, making us the industry's #1 supplier of auto likes!</p>
+                            <h2 class="section-heading-article">Who should Buy Automatic Likes on Instagram?</h2>
+                            <p class="dark_text">We recommend every <strong>individual</strong>,
+                                <strong>celebrity</strong>, and <strong>brand</strong> to get benefit from auto likes
+                                because it can make you an influencer. People spend a lot of time learning IG marketing
+                                tactics and tips. Still, they experience slow growth in their social media growth. Our
+                                services are wonderful because they lessen your effort and give better social media
+                                marketing results. </p>
+                            <p class="dark_text"><img
+                                    src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/buy-instagram-auto-likes.png"
+                                    class="img-fluid img-thumbnail" alt="Buy automatic Instagram likes"></p>
+                            <h2 class="section-heading-article">Benefits of Auto Instagram Likes:</h2>
+                            <p class="dark_text">Apart from the <strong>rapidness of this service</strong>, it also
+                                carries many fruitful benefits that can <strong>level up your Instagram promotion and
+                                    marketing</strong>.</p>
+                            <h3 class="color-black">Engagement and Reach</h3>
+                            <p class="dark_text">People love to comment and share posts/photos that get thousand <a
+                                    href="https://smm-eu.com/">Instagram likes</a>. It is the reason anything posted by
+                                big celebrities starts getting a response instantly. So, after you setup auto likes on
+                                your profile, whenever you upload new post and get automatic likes on it, your followers
+                                get a strong message that your content is appreciated by others, which persuades them to
+                                engage with it. This is when your game starts.</p>
+                            <h3 class="color-black">Viral Marketing</h3>
+                            <p class="dark_text">Auto likes can make anyone viral, no matter how big your profile is on
+                                Instagram. If uour post got <strong>real, genuine and many likes</strong> instantly as
+                                soon as you post, it will send Instagram algorithm a message that this content needs
+                                attention. After this, your photos start getting in the trend of hashtags where other
+                                users become your followers and may post their comments. This is where you need help of
+                                automatic Instagram likes.</p>
+                            <h3 class="color-black">Customer Building</h3>
+                            <p class="dark_text">Every new brand needs trust and social media recognition. Conversions
+                                and leads come when followers see other users interacting with the posts. <strong>Real
+                                    and quality IG likes</strong> bought from us help your profile gets the required
+                                recognition and social media trust. People start realizing that the business offers
+                                products and services that are getting <a href="https://smm-eu.com/">instant likes on
+                                    Instagram</a>. They feel the urge to buy your products and services. It increases
+                                your sales and customers at the same time. <strong>This is when you become a
+                                    winner</strong>.</p>
+                            <h2 class="section-heading-article">Why Smm-eu.com is #1 Choice for Automatic Likes?</h2>
+                            <img src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/buy-automatic-instagram-likes-instantly.png"
+                                width="450" height="450" class="img-fluid rounded float-right"
+                                alt="auto Instagram likes">
+                            <p class="dark_text">Our in house experts and social media specialists have tailored every
+                                service per the buyer's requirements. Also, there are other reasons that we are the #1
+                                service to purchase auto likes for Instagram:</p>
+                            <h3 class="color-black">Affordable Price</h3>
+                            <p class="dark_text">There are thousands of ways that can help you get noticed on Instagram,
+                                but most of them either require extra hard work or heavy funds. However, <strong>real IG
+                                    auto likes</strong> are available in affordable packages to start with. You can
+                                distribute the likes you want for each post and get them instantly without effort. </p>
+                            <h3 class="color-black">Fast & Automated</h3>
+                            <p class="dark_text">Our process is rapid and automatic. The advanced system enables you to
+                                receive automatic likes for 30 days without the need to continuously make purchases. You
+                                only need to set it up once, and then simply upload your post whenever you desire. Our
+                                system will detect it within a few seconds and promptly deliver likes within minutes.
+                            </p>
+                            <h3 class="color-black">No Password Required</h3>
+                            <p class="dark_text">There is no requirement for a password. We only need your Instagram
+                                profile username or URL to make this magic happen for you.</p>
+                            <h3 class="color-black">100% Results</h3>
+                            <p class="dark_text">Our customers <strong>buy auto likes</strong> repeatedly because we
+                                deliver complete results and go the extra mile for satisfaction. </p>
+                            <h3 class="color-black">Real Instagram Likes Only</h3>
+                            <p class="dark_text">Our quality likes are the reason for our huge success in the market. We
+                                ensure every customer gets genuine likes with a complete profile, posts, and pictures.
+                                It makes us a trustworthy supplier. </p>
+                            <h3 class="color-black">Safe & Confidential</h3>
+                            <p class="dark_text">All your details are kept secret, and no one can know if you have
+                                purchased auto likes from us. We get thousands of customers every day with absolutely no
+                                complaints at all!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="questions" id="faq">
+        <div class="questions__wrapper">
+            <div class="container">
+                <h2 align="center" class="section-heading color-black">Frequently Asked Questions</h2>
+                <p align="center" class="paragraph dark">We have served more than 47000+ clients. Customer trust us as
+                    best website which deliver real active instagram followers. </p>
+                <div class="row">
+                    <p></p>
+                </div>
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <div id="accordion">
+                            <div class="card" id="card-1">
+                                <div class="card-header" id="heading-1">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>How can I get auto likes
+                                            on Instagram?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-1" class="collapse show" aria-labelledby="heading-1"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Select your desired <strong>IG auto likes</strong> package
+                                            from above, and click the buy now button. Enter your username, and select
+                                            your desired likes delivery speed. That's it.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-2">
+                                <div class="card-header" id="heading-2">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>What is the best
+                                            Instagram auto liker?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-2" class="collapse" aria-labelledby="heading-2"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Being the industry leader since 2015, Smm-eu.com is the
+                                            number one, and <strong>best auto liker</strong> in the market with
+                                            affordable packages with customized likes delivery speed.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-3">
+                                <div class="card-header" id="heading-3">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>What are auto likes on
+                                            Instagram?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-3" class="collapse" aria-labelledby="heading-3"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph"><strong>IG auto likes</strong> is a premium service which
+                                            give you <strong>automatic likes</strong> on your upcoming posts on
+                                            Instagram, and does't matter whenever you post. Our Instagram auto likes
+                                            system will detect your every new post/video in just few minutes and
+                                            <strong>deliver IG likes or match video views</strong> on it as per the
+                                            selected package.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-4">
+                                <div class="card-header" id="heading-4">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Which auto Instagram
+                                            Likes Package Should I buy?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-4" class="collapse" aria-labelledby="heading-4"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">On Smm-eu.com, we offer <strong>eight different IG auto
+                                                likes</strong> packages. Every package will give premium quality of <a
+                                                href="https://smm-eu.com/">Instagram likes</a> with pre-defined selected
+                                            time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-5">
+                                <div class="card-header" id="heading-5">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>How does Instagram Auto
+                                            Liker work?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-5" class="collapse" aria-labelledby="heading-5"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">We have designed a system which will continue monitor your
+                                            Instagram account. Whenever you post either photo or video on your Instagram
+                                            profile, our system will detect it in less than a minute and will start
+                                            delivering IG likes or matching views on it with pre-defined time. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-6">
+                                <div class="card-header" id="heading-6">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can you set automatic
+                                            likes on Instagram?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-6" class="collapse" aria-labelledby="heading-6"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Yes! You can set <strong>automatic likes on
+                                                Instagram</strong> with the help of Smm-eu.com. Please check our auto IG
+                                            likes pacakges above.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-7">
+                                <div class="card-header" id="heading-7">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can I buy Instagram
+                                            followers and comments at a same time with auto likes?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-7" class="collapse" aria-labelledby="heading-7"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Yes, you can. Even its highly recommended to buy both at
+                                            the same time to keep your post impressions, likes and engagement as per
+                                            your account following. Please check out <a
+                                                href="https://smm-eu.com/">Instagram followers</a> and <a
+                                                href="https://smm-eu.com/">comments</a> section.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-8">
+                                <div class="card-header" id="heading-8">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-8" aria-expanded="true" aria-controls="collapse-8">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can I buy buy auto
+                                            comments on Instagram?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-8" class="collapse" aria-labelledby="heading-7"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Yes, you can buy auto comments as well form us. Please
+                                            check out <a href="https://smm-eu.com/">Instagram auto comments</a> service.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="clients-sec" id="feedback">
+        <div class="container">
+            <h2 class="section-heading color-black">Customer Feedback and Reviews</h2>
+            <p align="center" class="paragraph dark">Customer is king and we know how to serve our king. Our Customer
+                service is available 24/7.</p>
+            <div class="row">
+                <p></p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="content text-center">
+                    <div class="ratings"> <span class="product-rating">4.9</span><span>/5</span>
+                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                        <div class="rating-text"> <span>4.9 ratings from 9 reviews</span> </div>
+                    </div>
+                    <div class="btn">
+                        <a href="#" class="readon">Submit Your Reviews</a>
+                    </div>
+                    <div class="row">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p></p>
+            </div>
+            <div class="testimonial__wrapper">
+                <div class="exp_testimonial" style="height: 600px; width: 100%; overflow-y: scroll;">
+                    <div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Leonard Lalli</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Was searching for best auto liker and found that
+                                            Smm-eu.com is the best website to buy ig auto likes.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Rodriguez</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">One of the best option of the Smm-eu.com is to
+                                            select desired auto likes delivery time which I have selected at checkout
+                                            page.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">K. Kumar</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">This is the best website I ever found to get auto
+                                            Instagram likes for my company page. Highly recommended.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Jose Cottrell</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">5 stars for your support team, good work and highly
+                                            recommended.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Deborah</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Such and easy way to get Instagram likes. Bought 100
+                                            likes package for full month.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">James Holzer</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Waoo! my account looks great now after have massive
+                                            number of followers.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Erika Bailey</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Smm-eu.com rocks. You nailed it that how to get
+                                            unlimited Instagram likes instantly as soon as I post.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Caitlin</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I was buying IG likes for every post as soon as i
+                                            post. Then suddently I saw, auto likes page of Smm-eu.com and now a Happy
+                                            client to buy package for full month.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Catherine T</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">My order #358920198 and I bought 500 auto likes
+                                            package. 5 star out of 5 and specially thanks to support team.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
