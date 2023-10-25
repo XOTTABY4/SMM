@@ -1,5 +1,9 @@
 {
     "recommendations": [
-        "gitpod.gitpod-desktop"
+        "gitpod.gitpod-desktop",
+        "bibhasdn.django-snippets",
+        "bibhasdn.django-html",
+        "thebarkman.vscode-djaneiro",
+        "ms-toolsai.jupyter-keymap"
     ]
 }
