@@ -16,8 +16,11 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 PROJECT_ROOT = os.path.dirname(__file__)
-PATH_TO_NOTEBOOK_DIR = os.path.join(PROJECT_ROOT, 'jyp')
+
+PATH_TO_NOTEBOOK_DIR = BASE_DIR / 'jyp'
+
 sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 
 # Quick-start development settings - unsuitable for production
@@ -61,21 +64,22 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'smm_eu.urls'
 
-try:
-    import jupyterlab
-    notebook_default_url = '/lab'  # Using JupyterLab
-except ImportError:
-    notebook_default_url = '/tree'  # Using Jupyter
+# try:
+#     import jupyterlab
+#     notebook_default_url = '/lab'  # Using JupyterLab
+# except ImportError:
+#     notebook_default_url = '/tree'  # Using Jupyter
 
-NOTEBOOK_ARGUMENTS = [
-    '--ip', '0.0.0.0',
-    '--port', '8888',
-    '--notebook-dir', PATH_TO_NOTEBOOK_DIR,
-    '--NotebookApp.default_url', notebook_default_url,
-]
+# NOTEBOOK_ARGUMENTS = [
+#     '--ip', '0.0.0.0',
+#     '--port', '8888',
+#     '--notebook-dir', PATH_TO_NOTEBOOK_DIR,
+#     '--NotebookApp.default_url', notebook_default_url,
+# ]
 
-IPYTHON_KERNEL_DISPLAY_NAME = 'Django Kernel'
+# IPYTHON_KERNEL_DISPLAY_NAME = 'DjangoKernel'
 
+# PYDEVD_DISABLE_FILE_VALIDATION=1
 
 TEMPLATES = [
     {
@@ -132,13 +136,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
 # LANGUAGE_CODE = 'en-us'
-LANGUAGE_CODE = 'ru-RU'
+LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

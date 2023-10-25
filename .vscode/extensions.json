@@ -5,6 +5,17 @@
         "bibhasdn.django-html",
         "thebarkman.vscode-djaneiro",
         "ms-toolsai.jupyter-keymap",
-        "kevinrose.vsc-python-indent"
+        "kevinrose.vsc-python-indent",
+        "dongli.python-preview",
+        "genieai.chatgpt-vscode",
+        "akosyakov.gitpod-monitor",
+        "deerawan.vscode-dash",
+        "ms-dotnettools.vscode-dotnet-sdk",
+        "ms-dotnettools.vscode-dotnet-pack",
+        "gitpod.gitpod-remote-ssh",
+        "skyapps.fish-vscode",
+        "colinfang.my-nbpreviewer",
+        "samghelms.jupyter-notebook-vscode",
+        "ms-dotnettools.dotnet-interactive-vscode"
     ]
 }
