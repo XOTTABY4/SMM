@@ -25,159 +25,60 @@
             </div>
         </div>
     </section>
+    <div class="modal-backdrop fade show"></div>
     <section class="pricing" id="pricing">
         <div class="pricing__wrapper">
-            <h2 align="center" class="package">Likes Packages</h2>
+            <h2 align="center" class="package">Followers Packages</h2>
             <div class="container">
-                <div class=" container-fluid pricingTable pt-90">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="inner d-flex tabsBtnHolder">
-                                    <ul style="display:none;">
-                                        <li>
-                                            <p id="monthly" class="active">Likes Packages</p>
-                                        </li>
-                                        <li>
-                                            <p id="yearly" class>Gender Base Likes</p>
-                                        </li>
-                                        <li class="indicator"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row monthlyPriceList animated">
-                            {% for price_field in list_tik_tok_like %}
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>{{ price_field.count_field }} Likes</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>${{ price_field.new_price }}</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Likes</p>
-                                        <p>Includes Video Views</p>
-                                        <p>Fast Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>Customer Satisfaction</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>Split Option Available</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="{% url 'main:instagramfolbuy' price_field.id %}" class="readon">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        {% endfor %}
-                        </div>
-                        <div class="row yearlyPriceList d-none animated">
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>500 Female Likes</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$9.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Likes from Female Accounts</p>
-                                        <p>Includes Video Views</p>
-                                        <p>Fast Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>Customer Satisfaction</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>Split Option Available</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="https://expressfollowers.com/web/enter-username?package=273"
-                                            class="readon">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>1000 Female Likes</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$18.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Likes from Female Accounts</p>
-                                        <p>Includes Video Views</p>
-                                        <p>Fast Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>Customer Satisfaction</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>Split Option Available</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="https://expressfollowers.com/web/enter-username?package=275"
-                                            class="readon">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>500 Male Likes</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$9.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Likes from Male Accounts</p>
-                                        <p>Includes Video Views</p>
-                                        <p>Fast Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>Customer Satisfaction</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>Split Option Available</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="https://expressfollowers.com/web/enter-username?package=274"
-                                            class="readon">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>1000 Male Likes</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$18.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Likes from Male Accounts</p>
-                                        <p>Includes Video Views</p>
-                                        <p>Fast Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>Customer Satisfaction</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>Split Option Available</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="https://expressfollowers.com/web/enter-username?package=276"
-                                            class="readon">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div align="center">
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal"
+                        style="display:none;">
+                        What is the difference?
+                    </button>
                 </div>
-                <div class="row">
-                    <p></p>
-                </div>
+                <div class="modal fade show"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-modal="true" style="padding-right: 17px; display: block;">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Inclusion in the work within 3-5 minutes, after payment.<br> The process of adding likes will begin.</h5>
+									<button type="button" class="close" data-dismiss="modal" id="destory_modal" aria-label="Close">
+										<span aria-hidden="true">×</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<hr>
+											</div>
+											<div class="col-sm-7 col-9 col-lg-9">
+												<span class="font-weight-bold">{{ order_by_id_fol.count_field }} Likes</span>
+											</div>
+											<div class="col-sm-5 col-3 col-lg-3">
+												<span class="font-weight-bold" id="priice">{{ order_by_id_fol.new_price }} $</span>
+											</div>
+											<div class="col-sm-12">
+												<hr>
+											</div>
+										</div>
+										<div style="margin-top: 3.299999999999997rem;" class="row" id="link-input">
+											<label for="#" style="font-size: 1.0rem;" class="col-sm-12">Enter the link to your Tik-Tok post. (Profile must be open)</label>
+											<input type="text" class="form-control" placeholder="https://tiktok.com/username" style="text-align: left;" name="url_link" id="url_link" required="">
+											<div class="invalid-feedback d-none">Required field</div>
+											<div class="bg-danger text-white p-3 d-none w-100 text-center" id="error_text">
+												<p>Please fill in all required fields</p>
+											</div>
+										</div>
+									</div>
+									<input type="hidden" name="p_id" id="p_id" value="23">
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success" onclick="checkOut(event);" id="btn_chekout">Next</button>
+								</div>
+								<div class="d-none" id="hidden_form"></div>
+							</div>
+						</div>
+					</div>
             </div>
         </div>
     </section>

@@ -12,7 +12,9 @@ urlpatterns = [
 
 
     path('buy/instagram-followers/<int:price_id>', views.instagramfolbuy, name='instagramfolbuy'),
-    path('buy/instagram-followers/<int:price_id>', views.instagramlikebuy, name='instagramlikebuy'),
+    path('buy/instagram-likes/<int:price_id>', views.instagramlikebuy, name='instagramlikebuy'),
+    path('buy/buy-instagram-views/<int:price_id>', views.instagramviewsbuy, name='instagramviewsbuy'),
+    path('buy/buy-instagram-auto-likes/<int:price_id>', views.instagramautolikebuy, name='instagramautolikebuy'),
 
     path('buy-tiktok-followers/', views.tiktokfol, name='tiktokfol'),
     path('buy-tiktok-likes/', views.tiktoklike, name='tiktoklike'),

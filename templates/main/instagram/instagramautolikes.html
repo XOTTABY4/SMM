@@ -48,7 +48,7 @@
                                         <p>Per Post</p>
                                     </div>
                                     <div class="price mt-5">
-                                        <p><b>{{ price_field.new_price }} posts</b></p>
+                                        <p><b>{{ price_field.new_price }}$/50 posts</b></p>
                                         <p>Per Month</p>
                                     </div>
                                     <div class="info">
@@ -60,8 +60,7 @@
                                         <p>24/7 Support</p>
                                     </div>
                                     <div class="btn">
-                                        <a href="https://expressfollowers.com/web/enter-username?package=48"
-                                            class="readon">Buy Now</a>
+                                        <a href="{% url 'main:instagramautolikebuy' price_field.id %}" class="readon">Buy Now</a>
                                     </div>
                                 </div>
                             </div>

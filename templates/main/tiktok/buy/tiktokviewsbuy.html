@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 
-{% block title %}Live subscribers, likes, video views{% endblock %}
+{% block title %}live subscribers, likes, video views{% endblock %}
 {% block content %}
     <section class="hero hero-2">
         <div align="center" class="hero__wrapper">
             <div class="container">
                 <div class="row align-items-lg-center">
                     <div class="col-lg-12 order-2 order-lg-1">
-                        <h1 class="main-heading color-black">Buy Instagram Reels Views</h1>
-                        <p class="paragraph">At <span>Smm-eu.com<sup>TM</sup></span>, buy Instagram Reels views
-                            instantly with just three clicks</p>
+                        <h1 class="main-heading color-black">Buy TikTok Reels Views</h1>
+                        <p class="paragraph">At <span>Smm-eu.com<sup>TM</sup></span>, buy TikTok Reels views instantly
+                            with just three clicks</p>
                         <div class="d-flex justify-content-center">
                             <div class="content text-center">
                                 <div class="ratings">
@@ -25,155 +25,63 @@
             </div>
         </div>
     </section>
-
-
+        <div class="modal-backdrop fade show"></div>
     <section class="pricing" id="pricing">
         <div class="pricing__wrapper">
-            <h2 align="center" class="package">IG Reel Views Packages</h2>
+            <h2 align="center" class="package">Followers Packages</h2>
             <div class="container">
-
-                <div class=" container-fluid pricingTable pt-90">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="inner d-flex tabsBtnHolder">
-                                    <ul style="display:none;">
-                                        <li>
-                                            <p id="monthly" class="active">Starter Packages</p>
-                                        </li>
-                                        <li>
-                                            <p id="yearly" class>Advance Packages</p>
-                                        </li>
-                                        <li class="indicator"></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row monthlyPriceList animated">
-                            {% for price_field in list_instagram_views %}
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>{{ price_field.count_field }} Views</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>${{ price_field.new_price }}</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Views</p>
-                                        <p>Instant Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>49% Discount</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="{% url 'main:instagramviewsbuy' price_field.id %}" class="readon">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                        <div class="row yearlyPriceList d-none animated">
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>2M Views</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$999.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Views</p>
-                                        <p>Instant Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>75% Discount</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="/web/enter-username?package=269" class="readon"
-                                            title="2m reel views">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>3M Views</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$1199.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Views</p>
-                                        <p>Instant Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>75% Discount</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="/web/enter-username?package=270" class="readon"
-                                            title="2m reel views">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>5M Views</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$1599.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Views</p>
-                                        <p>Instant Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>75% Discount</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="/web/enter-username?package=271" class="readon"
-                                            title="5m reel views">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>10M Views</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$2999.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Views</p>
-                                        <p>Instant Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>75% Discount</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="/web/enter-username?package=272" class="readon"
-                                            title="10m reel views">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div align="center">
+                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal"
+                        style="display:none;">
+                        What is the difference?
+                    </button>
                 </div>
-                <div class="row">
-                    <p></p>
-                </div>
+                <div class="modal fade show"  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-modal="true" style="padding-right: 17px; display: block;">
+						<div class="modal-dialog modal-lg" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Inclusion in the work within 3-5 minutes, after payment.<br> The process of adding views will begin.</h5>
+									<button type="button" class="close" data-dismiss="modal" id="destory_modal" aria-label="Close">
+										<span aria-hidden="true">×</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-sm-12">
+												<hr>
+											</div>
+											<div class="col-sm-7 col-9 col-lg-9">
+												<span class="font-weight-bold">{{ order_by_id_fol.count_field }} Views</span>
+											</div>
+											<div class="col-sm-5 col-3 col-lg-3">
+												<span class="font-weight-bold" id="priice">{{ order_by_id_fol.new_price }} $</span>
+											</div>
+											<div class="col-sm-12">
+												<hr>
+											</div>
+										</div>
+										<div style="margin-top: 3.299999999999997rem;" class="row" id="link-input">
+											<label for="#" style="font-size: 1.0rem;" class="col-sm-12">Enter the link to your Tik-Tok post. (Profile must be open)</label>
+											<input type="text" class="form-control" placeholder="https://tiktok.com/username/post_id" style="text-align: left;" name="url_link" id="url_link" required="">
+											<div class="invalid-feedback d-none">Required field</div>
+											<div class="bg-danger text-white p-3 d-none w-100 text-center" id="error_text">
+												<p>Please fill in all required fields</p>
+											</div>
+										</div>
+									</div>
+									<input type="hidden" name="p_id" id="p_id" value="23">
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-success" onclick="checkOut(event);" id="btn_chekout">Next</button>
+								</div>
+								<div class="d-none" id="hidden_form"></div>
+							</div>
+						</div>
+					</div>
             </div>
         </div>
     </section>
-
-
     <section class="growth" id="feature">
         <div class="growth__wrapper">
             <div class="container">
@@ -182,7 +90,7 @@
                     <div class="content text-center">
                         <div class="ratings">
                             <div class="rating-text">Important Notice: <span>We only offer <b>real views services</b>
-                                    from real Instagram accounts. We <b>DON'T SELL Bot Views</b>.</span> </div>
+                                    from real TikTok accounts. We <b>DON'T SELL Bot Views</b>.</span> </div>
                         </div>
                     </div>
                 </div>
@@ -197,7 +105,7 @@
                             </div>
                             <div class="content">
                                 <h3>Instant Delivery</h3>
-                                <p class="paragraph darkfeature">When you buy Instagram Reels views, our AI-based system
+                                <p class="paragraph darkfeature">When you buy TikTok Reels views, our AI-based system
                                     will begin processing your order instantly.</p>
                                 <p class="paragraph darkfeature">We guarantee that your order will be fulfilled within
                                     the promised time, and you will start receiving reel views in just a few seconds.
@@ -213,7 +121,7 @@
                             <div class="content">
                                 <h3>Affordable Prices</h3>
                                 <p class="paragraph darkfeature">Affordable prices, extraordinary results. Supercharge
-                                    your Instagram presence with our highly cost-effective reel views</p>
+                                    your TikTok presence with our highly cost-effective reel views</p>
                                 <p class="paragraph darkfeature">Witness the significant impact on your follower count,
                                     engagement levels, and overall brand recognition.</p>
                             </div>
@@ -227,7 +135,7 @@
                             <div class="content">
                                 <h3>Real Insta Reel Views</h3>
                                 <p class="paragraph darkfeature">We are the only one in the market who provide reel
-                                    views from real Instagram accounts. </p>
+                                    views from real TikTok accounts. </p>
                                 <p class="paragraph darkfeature">Our IG reel views are 100% real, providing you with
                                     engagement and increased visibility. Watch your content soar to new heights.</p>
                             </div>
@@ -269,8 +177,8 @@
                             <div class="content">
                                 <h3>Only Username</h3>
                                 <p class="paragraph darkfeature">Are you tired of manually adding reel links on other
-                                    websites? Look no further! With us, all you need to do is enter your Instagram
-                                    username, and we will fetch all your Instagram Reels for you. Simply select the ones
+                                    websites? Look no further! With us, all you need to do is enter your TikTok
+                                    username, and we will fetch all your TikTok Reels for you. Simply select the ones
                                     for which you want to receive views.</p>
                             </div>
                         </div>
@@ -303,109 +211,106 @@
             </div>
         </div>
     </section>
-
-
     <section class="pricing" id="article">
         <div class="pricing__wrapper">
             <div class="container">
-                <h2 class="section-heading color-black">What Are Instagram Reels?</h2>
+                <h2 class="section-heading color-black">What Are TikTok Reels?</h2>
                 <div class="row">
                     <p></p>
                 </div>
                 <div class="row align-items-lg-center">
                     <div class="col-lg-12 order-2 order-lg-1">
                         <div class="paragraph dark">
-                            <p class="dark_text">Instagram’s relatively new feature allows users to create short videos
-                                of up to 60 seconds with many options to add music, filters, and effects, which can be
+                            <p class="dark_text">TikTok’s relatively new feature allows users to create short videos of
+                                up to 60 seconds with many options to add music, filters, and effects, which can be
                                 shared to users’ stories, explore feeds, and on the new Reels tab on the user’s profile.
                             </p>
-                            <p class="dark_text">Instagram Reels are similar to the short video platform TikTok and are
-                                available in more than 150 countries worldwide. Like TikTok, Instagram Reels have an
-                                explore page, where Instagram show reels from who you already follow, from influencers,
+                            <p class="dark_text">TikTok Reels are similar to the short video platform TikTok and are
+                                available in more than 150 countries worldwide. Like TikTok, TikTok Reels have an
+                                explore page, where TikTok show reels from who you already follow, from influencers,
                                 from your geolocation, and especially which content you interact with. And sometimes
                                 content with the FEATURED label to help you discover original content.</p>
                             <p class="dark_text center"><img
-                                    src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/buy-instagram-reel-views.png"
+                                    src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/buy-TikTok-reel-views.png"
                                     width="350" height="350" class="img-fluid rounded float-right"
-                                    alt="Buy Instagram Reels views instantly"
-                                    title="get instant Instagram Reels whe you buy from smm-eu.com"></p>
-                            <h3 class="color-black">How to Create Instagram Reels?</h3>
-                            <p class="dark_text">There are two options for creating Instagram Reels</p>
+                                    alt="Buy TikTok Reels views instantly"
+                                    title="get instant TikTok Reels whe you buy from smm-eu.com"></p>
+                            <h3 class="color-black">How to Create TikTok Reels?</h3>
+                            <p class="dark_text">There are two options for creating TikTok Reels</p>
                             <ol>
-                                <li>Click on the reels icon at the bottom of the Instagram app.</li>
+                                <li>Click on the reels icon at the bottom of the TikTok app.</li>
                                 <li>Click on plus sign on “Your Story,” then click on the setting icon and select Reels.
                                 </li>
                             </ol>
                             <p class="dark_text">After recording your reels video or uploading it from the gallery, you
-                                can use the built-in video editor of Instagram to add effects, music, slow motion
-                                effects, and various other options.</p>
-                            <h2 class="section-heading-article">What are Instagram Reels Views?</h2>
-                            <p class="dark_text">In simple words, engagement with the audience. Instagram has 1.22
-                                billion monthly active users, which is increasing daily. After launching Instagram
-                                Reels, there was an 11.4% increase in downloads for the Instagram app. From this, you
-                                can understand how popular Instagram Reels are.</p>
-                            <p class="dark_text">If you open any profile on Instagram, under the reels icon, you can
-                                find all uploaded reels videos by users, and there you can see how many views every
-                                video got. The number of <b>reels views</b> indicates how much engagement the video has
-                                and how much value that video adds to the profile.</p>
+                                can use the built-in video editor of TikTok to add effects, music, slow motion effects,
+                                and various other options.</p>
+                            <h2 class="section-heading-article">What are TikTok Reels Views?</h2>
+                            <p class="dark_text">In simple words, engagement with the audience. TikTok has 1.22 billion
+                                monthly active users, which is increasing daily. After launching TikTok Reels, there was
+                                an 11.4% increase in downloads for the TikTok app. From this, you can understand how
+                                popular TikTok Reels are.</p>
+                            <p class="dark_text">If you open any profile on TikTok, under the reels icon, you can find
+                                all uploaded reels videos by users, and there you can see how many views every video
+                                got. The number of <b>reels views</b> indicates how much engagement the video has and
+                                how much value that video adds to the profile.</p>
                             <h3 class="color-black">What Counts As A View On IG Reels?</h3>
-                            <p class="dark_text">On Instagram Reels, a view is only counted if the video has been
-                                watched for at least 3 seconds. It means that if someone scrolls, finds a reel, and
-                                watches it for less than 3 seconds, it won't count as a view. However, if someone
-                                watches the Reel for 3 seconds or more, it will count as a view and be included in the
-                                view count. Instagram Reels also track views from individual accounts, meaning it will
-                                only count as one view if the same person watches the same reel multiple times.</p>
-                            <h2 class="section-heading-article">Reasons to Buy Instagram Reels Views</h2>
+                            <p class="dark_text">On TikTok Reels, a view is only counted if the video has been watched
+                                for at least 3 seconds. It means that if someone scrolls, finds a reel, and watches it
+                                for less than 3 seconds, it won't count as a view. However, if someone watches the Reel
+                                for 3 seconds or more, it will count as a view and be included in the view count. TikTok
+                                Reels also track views from individual accounts, meaning it will only count as one view
+                                if the same person watches the same reel multiple times.</p>
+                            <h2 class="section-heading-article">Reasons to Buy TikTok Reels Views</h2>
                             <img src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/exclusive-quality-buy-ig-reel-views.png"
                                 width="200" height="200" class="img-fluid rounded float-right"
                                 alt="Buy ig reel views - exclusive quality"
                                 title="buy exclusive quality of ig reel views">
-                            <p class="dark_text">Remember! Engagement on social media is extremely important, and
-                                Instagram Reels are different from stories. It will stay permanently on your profile
-                                under the reels tab. You have to be creative and create quality content. Whenever
-                                visitors or potential clients visit your personal or business profile, they can see all
-                                your reels and get an idea of how much engagement and interaction you bring with your
-                                reels video views.</p>
+                            <p class="dark_text">Remember! Engagement on social media is extremely important, and TikTok
+                                Reels are different from stories. It will stay permanently on your profile under the
+                                reels tab. You have to be creative and create quality content. Whenever visitors or
+                                potential clients visit your personal or business profile, they can see all your reels
+                                and get an idea of how much engagement and interaction you bring with your reels video
+                                views.</p>
                             <p class="dark_text">If you have many <b>reel video views</b>, visitors trust your business
                                 and are more likely to follow your account. In this matter, <a
                                     href="https://smm-eu.com/" title="smm-eu.com">Smm-eu.com</a> will help you to grow
-                                your reels video views. You can <b>buy Instagram Reels views</b> with instant delivery
-                                and up to 1 million views.</p>
-                            <h2 class="section-heading-article">How to Buy Instagram Reels Views?</h2>
+                                your reels video views. You can <b>buy TikTok Reels views</b> with instant delivery and
+                                up to 1 million views.</p>
+                            <h2 class="section-heading-article">How to Buy TikTok Reels Views?</h2>
                             <div class="row">
                                 <div class="col-lg-5">
                                     <p class="dark_text"><img
-                                            src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/how-to-buy-instagram-reel-views.png"
+                                            src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/how-to-buy-TikTok-reel-views.png"
                                             width="450" height="450" class="img-fluid rounded float-left"
-                                            alt="how to buy instagram reel views"
-                                            title="step by step guide to buy instagram reel views"></p>
+                                            alt="how to buy TikTok reel views"
+                                            title="step by step guide to buy TikTok reel views"></p>
                                 </div>
                                 <div class="col-lg-7">
-                                    <p class="dark_text">You can buy Instagram Reels views in just three clicks using
-                                        our advanced and user-friendly checkout system. All you need to do is follow the
+                                    <p class="dark_text">You can buy TikTok Reels views in just three clicks using our
+                                        advanced and user-friendly checkout system. All you need to do is follow the
                                         steps mentioned below.</p>
                                     <ol>
                                         <li><strong class="color-black">Select Package</strong>: Select your desired
-                                            Instagram Reels views package from above.</li>
-                                        <li><strong class="color-black">Enter Details</strong>: Enter your Instagram
+                                            TikTok Reels views package from above.</li>
+                                        <li><strong class="color-black">Enter Details</strong>: Enter your TikTok
                                             username and email address, then click next to select your reel.</li>
                                         <li><strong class="color-black">Views Delivered</strong>: Check order details,
                                             checkout, sit back, relax, and enjoy the magic.</li>
                                     </ol>
-                                    <p class="dark_text"><b>Important Note</b>: Please ensure that your Instagram
-                                        account is set to public before buying Reel views, and keep it public until the
-                                        views are delivered.</p>
+                                    <p class="dark_text"><b>Important Note</b>: Please ensure that your TikTok account
+                                        is set to public before buying Reel views, and keep it public until the views
+                                        are delivered.</p>
                                 </div>
                             </div>
                             <h2 class="section-heading-article">Why Choose Smm-eu.com for Buying Reels Views?</h2>
                             <p class="dark_text">We have a team with eight years of experience in social media marketing
-                                who understand how the Instagram algorithm works, and we are standing among the top
-                                service providers. We not only provide reels views, but we also provide <a
-                                    href="https://smm-eu.com/" title="instagram followers">Instagram followers</a>, <a
-                                    href="https://smm-eu.com/" title="instagram likes">likes</a>, and <a
-                                    href="https://smm-eu.com/" title="instagram custom comments">custom comments</a>.
-                            </p>
-                            <p class="dark_text">Smm-eu.com offers the following features when you <strong>buy Instagram
+                                who understand how the TikTok algorithm works, and we are standing among the top service
+                                providers. We not only provide reels views, but we also provide <a
+                                    href="https://smm-eu.com/" title="TikTok followers">TikTok followers</a>, <a
+                                    href="https://smm-eu.com/" title="TikTok likes">likes</a>, and <a
+                                    href="https://smm-eu.com/" title="TikTok custom comments">custom comments</a>.</p>
+                            <p class="dark_text">Smm-eu.com offers the following features when you <strong>buy TikTok
                                     Reels views</strong>.</p>
                             <ol>
                                 <li><strong>Affordable Prices (lower in the entire market)</strong>:We stand alone in
@@ -414,11 +319,10 @@
                                     high-quality views, which will significantly enhance your visibility.</li>
                                 <li><strong>Authentic Views (from Real accounts)</strong>:Whether you purchase 1000
                                     views or 10 million reel views, we assure you of receiving genuine views from real
-                                    Instagram accounts. Our reputation is built on prioritizing quality over quantity.
-                                </li>
+                                    TikTok accounts. Our reputation is built on prioritizing quality over quantity.</li>
                                 <li><strong>Instant Delivery</strong>:Once your order is successfully paid, our
                                     automated system will start processing it immediately. Within a matter of seconds to
-                                    minutes, you will begin to receive views on your Instagram reel.</li>
+                                    minutes, you will begin to receive views on your TikTok reel.</li>
                                 <li><strong>Money-Back Guarantee</strong>:We are the only ones in the entire market who
                                     offer a money-back guarantee without asking a single question. If your order is
                                     delayed or not delivered within the promised time, you will receive a 100% full
@@ -433,11 +337,11 @@
                                     information. All payment transactions are directly handled by our payment gateway,
                                     which ensures the highest level of security by transmitting all details through the
                                     256-bit SSL, PCI, and DSS systems.</li>
-                                <li><strong>Mind Satisfaction</strong>:Every order of Instagram reel views includes a
+                                <li><strong>Mind Satisfaction</strong>:Every order of TikTok reel views includes a
                                     guarantee of complete satisfaction. We assure you that you will receive genuine
-                                    views on your Instagram reel, which, in turn, will help boost your engagement rate
-                                    and increase your chances of obtaining <a href="https://smm-eu.com/"
-                                        title="buy instagram reel likes">more likes on your Instagram Reels</a>.</li>
+                                    views on your TikTok reel, which, in turn, will help boost your engagement rate and
+                                    increase your chances of obtaining <a href="https://smm-eu.com/"
+                                        title="buy TikTok reel likes">more likes on your TikTok Reels</a>.</li>
                                 <li><strong>24/7 Customer Support</strong>:Our in-house team of experienced customer
                                     support professionals is available online around the clock. Rest assured that
                                     whenever you encounter an issue or have a query, we will be readily available to
@@ -460,14 +364,12 @@
             </div>
         </div>
     </section>
-
-
     <section class="questions" id="faq">
         <div class="questions__wrapper">
             <div class="container">
                 <h4 align="center" class="section-heading color-black">Frequently Asked Questions</h4>
                 <p align="center" class="paragraph dark">We have served more than 47000 clients. The customer trusts us
-                    as the best website which delivers real Instagram Reels views.</p>
+                    as the best website which delivers real TikTok Reels views.</p>
                 <div class="row">
                     <p></p>
                 </div>
@@ -480,7 +382,7 @@
                                         <button class="btn btn-link btn-link2" data-toggle="collapse"
                                             data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
                                             <i class="fa fa-chevron-down tabs-drop-iconbox"></i>What is the best website
-                                            to buy Instagram Reels views in 2023?
+                                            to buy TikTok Reels views in 2023?
                                         </button>
                                     </h5>
                                 </div>
@@ -508,13 +410,13 @@
                                 <div id="collapse-2" class="collapse" aria-labelledby="heading-2"
                                     data-parent="#accordion">
                                     <div class="card-body">
-                                        <p class="paragraph">Yes, buying Instagram reel views from Smm-eu.com is very
-                                            easy now. Please select your desired Instagram reel package from above,
-                                            enter your Instagram profile username, and we will show your entire reel
-                                            video. Select your targeted reel and complete a successful checkout.
-                                            Remember, we offer <strong>instant delivery of views</strong> from real
-                                            accounts to increase the visibility and reach of your Instagram Reels, which
-                                            can bring your reels to the Instagram Explore page.</p>
+                                        <p class="paragraph">Yes, buying TikTok reel views from Smm-eu.com is very easy
+                                            now. Please select your desired TikTok reel package from above, enter your
+                                            TikTok profile username, and we will show your entire reel video. Select
+                                            your targeted reel and complete a successful checkout. Remember, we offer
+                                            <strong>instant delivery of views</strong> from real accounts to increase
+                                            the visibility and reach of your TikTok Reels, which can bring your reels to
+                                            the TikTok Explore page.</p>
                                     </div>
                                 </div>
                             </div>
@@ -524,7 +426,7 @@
                                         <button class="btn btn-link btn-link2" data-toggle="collapse"
                                             data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
                                             <i class="fa fa-chevron-down tabs-drop-iconbox"></i>How to get 5000 views on
-                                            Instagram reel?
+                                            TikTok reel?
                                         </button>
                                     </h5>
                                 </div>
@@ -538,7 +440,7 @@
                                             at optimal times, and promoting your Reel on additional social media
                                             platforms can further contribute to increasing views. <strong>SOUNDS
                                                 IMPOSSIBLE! RIGHT?</strong> In less than 5 minutes, you can get 5000
-                                            Instagram reel views through our specialized package, which guarantees views
+                                            TikTok reel views through our specialized package, which guarantees views
                                             from real users. Take a look at our <a href="https://smm-eu.com/"
                                                 title="5000 reel views">5000 reel views</a> package for more details.
                                         </p>
@@ -559,13 +461,13 @@
                                     data-parent="#accordion">
                                     <div class="card-body">
                                         <p class="paragraph">At Smm-eu.com, we offer a unique opportunity to <a
-                                                href="https://smm-eu.com/" title="1m reel views">buy 1 million Instagram
+                                                href="https://smm-eu.com/" title="1m reel views">buy 1 million TikTok
                                                 reel views</a>. Our service guarantees that you will receive genuine
                                             reel views from real users, resulting in increased engagement and effective
                                             targeting of your desired audience. Additionally, our instant delivery
                                             service enables you to attract a larger fan following, more likes and
-                                            comments, and significantly enhance the overall impressions on your
-                                            Instagram posts.</p>
+                                            comments, and significantly enhance the overall impressions on your TikTok
+                                            posts.</p>
                                     </div>
                                 </div>
                             </div>
@@ -575,18 +477,18 @@
                                         <button class="btn btn-link btn-link2" data-toggle="collapse"
                                             data-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
                                             <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Does my account gets
-                                            banned if I buy Instagram reel views?
+                                            banned if I buy TikTok reel views?
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="collapse-5" class="collapse" aria-labelledby="heading-5"
                                     data-parent="#accordion">
                                     <div class="card-body">
-                                        <p class="paragraph">We strictly provide real Instagram Reel views from real
+                                        <p class="paragraph">We strictly provide real TikTok Reel views from real
                                             accounts. Our system undergoes continuous updates and adjustments to ensure
                                             the instant delivery of authentic reel views, guaranteeing satisfactory
                                             results and engagement. Therefore, you can confidently use our services
-                                            without violating any of Instagram's terms and conditions.</p>
+                                            without violating any of TikTok's terms and conditions.</p>
                                     </div>
                                 </div>
                             </div>
@@ -634,7 +536,7 @@
                                         <button class="btn btn-link btn-link2" data-toggle="collapse"
                                             data-target="#collapse-8" aria-expanded="true" aria-controls="collapse-8">
                                             <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can anyone know that I
-                                            bought Instagram Reels views?
+                                            bought TikTok Reels views?
                                         </button>
                                     </h5>
                                 </div>
@@ -643,7 +545,7 @@
                                     <div class="card-body">
                                         <p class="paragraph">We provide 100% customer privacy and guarantee that we will
                                             never share your data with anyone, and no one will ever know that you have
-                                            bought Instagram Reels views from us.</p>
+                                            bought TikTok Reels views from us.</p>
                                     </div>
                                 </div>
                             </div>
@@ -660,8 +562,8 @@
                                 <div id="collapse-9" class="collapse" aria-labelledby="heading-9"
                                     data-parent="#accordion">
                                     <div class="card-body">
-                                        <p class="paragraph">Yes, we require your Instagram account or profile to be set
-                                            to public only during the duration of reel views delivery. Once you have
+                                        <p class="paragraph">Yes, we require your TikTok account or profile to be set to
+                                            public only during the duration of reel views delivery. Once you have
                                             received the views, you are free to switch your account back to private.</p>
                                     </div>
                                 </div>
@@ -671,8 +573,8 @@
                                     <h5 class="mb-0">
                                         <button class="btn btn-link btn-link2" data-toggle="collapse"
                                             data-target="#collapse-10" aria-expanded="true" aria-controls="collapse-10">
-                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can I buy Instagram
-                                            Reels likes also?
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can I buy TikTok Reels
+                                            likes also?
                                         </button>
                                     </h5>
                                 </div>
@@ -680,9 +582,9 @@
                                     data-parent="#accordion">
                                     <div class="card-body">
                                         <p class="paragraph">Certainly, you have the option to buy reel likes through
-                                            our <a href="https://smm-eu.com/" title="reel likes">Instagram reel likes
+                                            our <a href="https://smm-eu.com/" title="reel likes">TikTok reel likes
                                                 service</a>. We pride ourselves on being a one-stop solution for all
-                                            your Instagram marketing requirements.</p>
+                                            your TikTok marketing requirements.</p>
                                     </div>
                                 </div>
                             </div>
@@ -701,9 +603,9 @@
                                     <div class="card-body">
                                         <p class="paragraph">Yes you can. If you have already posted videos on your
                                             profile, you have the opportunity to <a href="https://smm-eu.com/"
-                                                title="buy instagram views">buy Instagram views</a> for your videos
-                                            directly on Smm-eu.com. We recommend exploring our views section for more
-                                            details.</p>
+                                                title="buy TikTok views">buy TikTok views</a> for your videos directly
+                                            on Smm-eu.com. We recommend exploring our views section for more details.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -713,8 +615,6 @@
             </div>
         </div>
     </section>
-
-
     <section class="clients-sec" id="feedback">
         <div class="container">
             <h4 class="section-heading color-black">Customer Feedback and Reviews</h4>
@@ -824,7 +724,7 @@
                                         <div class="rr_review_name">Roger Kyle</div>
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
-                                        <div class="rr_review_text">Purchased Instagram Reels views from Smm-eu.com, and
+                                        <div class="rr_review_text">Purchased TikTok Reels views from Smm-eu.com, and
                                             they delivered it quickly.</div>
                                         <div class="clear"></div>
                                     </div>
@@ -881,8 +781,8 @@
                                         <div class="rr_review_name">D. Buchheit</div>
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
-                                        <div class="rr_review_text">If you want to buy Instagram reel views, Smm-eu.com
-                                            is the champion in this service!</div>
+                                        <div class="rr_review_text">If you want to buy TikTok reel views, Smm-eu.com is
+                                            the champion in this service!</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -896,7 +796,7 @@
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
                                         <div class="rr_review_text">The quality at Smm-eu.com is unmatched, especially
-                                            for Instagram services.</div>
+                                            for TikTok services.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -909,8 +809,8 @@
                                         <div class="rr_review_name">Swanson</div>
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
-                                        <div class="rr_review_text">Impressed with the quality of Instagram reel views.
-                                            Purchasing Instagram Reels views is like counting fingertips now.</div>
+                                        <div class="rr_review_text">Impressed with the quality of TikTok reel views.
+                                            Purchasing TikTok Reels views is like counting fingertips now.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -923,8 +823,8 @@
                                         <div class="rr_review_name">Clifford</div>
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
-                                        <div class="rr_review_text">You guys offer fantastic Instagram services, and I
-                                            like IG reels views. I am giving five stars for this. </div>
+                                        <div class="rr_review_text">You guys offer fantastic TikTok services, and I like
+                                            IG reels views. I am giving five stars for this. </div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -951,7 +851,7 @@
                                         <div class="rr_review_name">Janet S.</div>
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
-                                        <div class="rr_review_text">My Instagram Reels video views skyrocketed after
+                                        <div class="rr_review_text">My TikTok Reels video views skyrocketed after
                                             buying. I highly recommend it!</div>
                                         <div class="clear"></div>
                                     </div>
@@ -965,7 +865,7 @@
                                         <div class="rr_review_name">Shelley Eades</div>
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
-                                        <div class="rr_review_text">I hesitated to buy Instagram Reels views, but
+                                        <div class="rr_review_text">I hesitated to buy TikTok Reels views, but
                                             Smm-eu.com gave me real users who watched my views.</div>
                                         <div class="clear"></div>
                                     </div>
@@ -980,7 +880,7 @@
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
                                         <div class="rr_review_text">I recommend Smm-eu.com for anyone looking to
-                                            purchase Instagram reel views.</div>
+                                            purchase TikTok reel views.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -993,8 +893,8 @@
                                         <div class="rr_review_name">Sherry Moore</div>
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
-                                        <div class="rr_review_text">Smm-eu.com offers the best Instagram views service
-                                            for instantly buying views.</div>
+                                        <div class="rr_review_text">Smm-eu.com offers the best TikTok views service for
+                                            instantly buying views.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -1022,7 +922,7 @@
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
                                         <div class="rr_review_text">If you're a reels creator, smm-eu.com can help
-                                            increase your Instagram reel views.</div>
+                                            increase your TikTok reel views.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -1050,7 +950,7 @@
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
                                         <div class="rr_review_text">I was amazed by the number of people who watched my
-                                            Instagram reel views after purchasing.</div>
+                                            TikTok reel views after purchasing.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -1063,7 +963,7 @@
                                         <div class="rr_review_name">Walker</div>
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
-                                        <div class="rr_review_text">Instagram reel views are the real deal to bring more
+                                        <div class="rr_review_text">TikTok reel views are the real deal to bring more
                                             views overnight.</div>
                                         <div class="clear"></div>
                                     </div>
@@ -1077,8 +977,8 @@
                                         <div class="rr_review_name">Norman Pena</div>
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
-                                        <div class="rr_review_text">The engagement I received from my Instagram Reels
-                                            video views was incredible.</div>
+                                        <div class="rr_review_text">The engagement I received from my TikTok Reels video
+                                            views was incredible.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -1091,8 +991,8 @@
                                         <div class="rr_review_name">Charles Tokarz</div>
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
-                                        <div class="rr_review_text">I'm so happy with my purchase of Instagram reel
-                                            views to gain popularity from smm-eu.com.</div>
+                                        <div class="rr_review_text">I'm so happy with my purchase of TikTok reel views
+                                            to gain popularity from smm-eu.com.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -1120,7 +1020,7 @@
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
                                         <div class="rr_review_text">Smm-eu.com is the go-to for anyone looking to buy
-                                            Instagram reel views.</div>
+                                            TikTok reel views.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -1133,7 +1033,7 @@
                                         <div class="rr_review_name">Gary Smith</div>
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
-                                        <div class="rr_review_text">I've tried other Instagram views services, but
+                                        <div class="rr_review_text">I've tried other TikTok views services, but
                                             smm-eu.com is the best, with very high quality services.</div>
                                         <div class="clear"></div>
                                     </div>
@@ -1176,7 +1076,7 @@
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
                                         <div class="rr_review_text">I can't believe how many real users watched my
-                                            Instagram Reels video after purchasing views. 100% Satisfied client.</div>
+                                            TikTok Reels video after purchasing views. 100% Satisfied client.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -1190,7 +1090,7 @@
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
                                         <div class="rr_review_text">smm-eu.com provides an excellent service for
-                                            purchasing Instagram reel views.</div>
+                                            purchasing TikTok reel views.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -1218,7 +1118,7 @@
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
                                         <div class="rr_review_text">I recommend smm-eu.com to anyone looking to increase
-                                            their Instagram views.</div>
+                                            their TikTok views.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -1232,7 +1132,7 @@
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
                                         <div class="rr_review_text">The online engagement I received from my purchased
-                                            Instagram reel views was fantastic.</div>
+                                            TikTok reel views was fantastic.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -1245,8 +1145,8 @@
                                         <div class="rr_review_name">Keith Legault</div>
                                         <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
                                         <div class="clear"></div>
-                                        <div class="rr_review_text">smm-eu.com is my go-to for all my Instagram reel
-                                            views needs.</div>
+                                        <div class="rr_review_text">smm-eu.com is my go-to for all my TikTok reel views
+                                            needs.</div>
                                         <div class="clear"></div>
                                     </div>
                                 </div>
@@ -1258,5 +1158,4 @@
             </div>
         </div>
     </section>
-
 {% endblock %}
