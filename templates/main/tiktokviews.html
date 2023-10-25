@@ -1,0 +1,1159 @@
+{% extends 'base.html' %}
+
+{% block title %}live subscribers, likes, video views{% endblock %}
+{% block content %}
+    <section class="hero hero-2">
+        <div align="center" class="hero__wrapper">
+            <div class="container">
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <h1 class="main-heading color-black">Buy TikTok Reels Views</h1>
+                        <p class="paragraph">At <span>Smm-eu.com<sup>TM</sup></span>, buy TikTok Reels views instantly
+                            with just three clicks</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="content text-center">
+                                <div class="ratings">
+                                    <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> </div>
+                                    <div class="rating-text"> <span>4.9 ratings from 36 reviews</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing" id="pricing">
+        <div class="pricing__wrapper">
+            <h2 align="center" class="package">IG Reel Views Packages</h2>
+            <div class="container">
+                <div class=" container-fluid pricingTable pt-90">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="inner d-flex tabsBtnHolder">
+                                    <ul style="display:none;">
+                                        <li>
+                                            <p id="monthly" class="active">Starter Packages</p>
+                                        </li>
+                                        <li>
+                                            <p id="yearly" class>Advance Packages</p>
+                                        </li>
+                                        <li class="indicator"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row monthlyPriceList animated">
+                          {% for price_field in list_tik_tok_views %}
+                            <div class="col-md-3">
+                                <div class="inner holder">
+                                    <div class="hdng">
+                                        <p>{{ price_field.count_field }} Views</p>
+                                    </div>
+                                    <div class="price mt-5">
+                                        <p><b>${{ price_field.new_price }}</b></p>
+                                    </div>
+                                    <div class="info">
+                                        <p>Real Views</p>
+                                        <p>Instant Delivery</p>
+                                        <p>Only Username Required</p>
+                                        <p>Privacy Protection</p>
+                                        <p>24/7 Support</p>
+                                        <p><b>49% Discount</b></p>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="{% url 'main:tiktokfolbuy' price_field.id %}" class="readon"
+                                            title="{{ price_field.count_field }} reel views">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                          {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="growth" id="feature">
+        <div class="growth__wrapper">
+            <div class="container">
+                <h2 class="section-heading color-black">Smm-eu.com<sup>TM</sup> IG Reel Views Features</h2>
+                <div class="d-flex justify-content-center">
+                    <div class="content text-center">
+                        <div class="ratings">
+                            <div class="rating-text">Important Notice: <span>We only offer <b>real views services</b>
+                                    from real TikTok accounts. We <b>DON'T SELL Bot Views</b>.</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p></p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-rocket"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Instant Delivery</h3>
+                                <p class="paragraph darkfeature">When you buy TikTok Reels views, our AI-based system
+                                    will begin processing your order instantly.</p>
+                                <p class="paragraph darkfeature">We guarantee that your order will be fulfilled within
+                                    the promised time, and you will start receiving reel views in just a few seconds.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-award"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Affordable Prices</h3>
+                                <p class="paragraph darkfeature">Affordable prices, extraordinary results. Supercharge
+                                    your TikTok presence with our highly cost-effective reel views</p>
+                                <p class="paragraph darkfeature">Witness the significant impact on your follower count,
+                                    engagement levels, and overall brand recognition.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Real Insta Reel Views</h3>
+                                <p class="paragraph darkfeature">We are the only one in the market who provide reel
+                                    views from real TikTok accounts. </p>
+                                <p class="paragraph darkfeature">Our IG reel views are 100% real, providing you with
+                                    engagement and increased visibility. Watch your content soar to new heights.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Permanent Views</h3>
+                                <p class="paragraph darkfeature">We've got you covered. We guarantee that our insta reel
+                                    views are 100% permanent and non-drop. </p>
+                                <p class="paragraph darkfeature">However, in the unlikely event that even a single view
+                                    drop within six months, we will give you free refill, no questions asked.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-lock"></i>
+                            </div>
+                            <div class="content">
+                                <h3>No Password</h3>
+                                <p class="paragraph darkfeature">We will never ask for your password or any other
+                                    private information. </p>
+                                <p class="paragraph darkfeature">We strongly recommend protecting your account and
+                                    refraining from sharing your passwords with anyone</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Only Username</h3>
+                                <p class="paragraph darkfeature">Are you tired of manually adding reel links on other
+                                    websites? Look no further! With us, all you need to do is enter your TikTok
+                                    username, and we will fetch all your TikTok Reels for you. Simply select the ones
+                                    for which you want to receive views.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-dollar-sign"></i>
+                            </div>
+                            <div class="content">
+                                <h3>Money Back Guarantee</h3>
+                                <p class="paragraph darkfeature">We will never ask any question and refund full amount
+                                    if any of order is not delivered on time with quality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="growth__box">
+                            <div class="icon">
+                                <i class="fa fa-user-astronaut"></i>
+                            </div>
+                            <div class="content">
+                                <h3>24/7 Customer Support</h3>
+                                <p class="paragraph darkfeature">We have expert with over eight years experience, don't
+                                    hesitate to get in touch with them if you have question.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing" id="article">
+        <div class="pricing__wrapper">
+            <div class="container">
+                <h2 class="section-heading color-black">What Are TikTok Reels?</h2>
+                <div class="row">
+                    <p></p>
+                </div>
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <div class="paragraph dark">
+                            <p class="dark_text">TikTok’s relatively new feature allows users to create short videos of
+                                up to 60 seconds with many options to add music, filters, and effects, which can be
+                                shared to users’ stories, explore feeds, and on the new Reels tab on the user’s profile.
+                            </p>
+                            <p class="dark_text">TikTok Reels are similar to the short video platform TikTok and are
+                                available in more than 150 countries worldwide. Like TikTok, TikTok Reels have an
+                                explore page, where TikTok show reels from who you already follow, from influencers,
+                                from your geolocation, and especially which content you interact with. And sometimes
+                                content with the FEATURED label to help you discover original content.</p>
+                            <p class="dark_text center"><img
+                                    src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/buy-TikTok-reel-views.png"
+                                    width="350" height="350" class="img-fluid rounded float-right"
+                                    alt="Buy TikTok Reels views instantly"
+                                    title="get instant TikTok Reels whe you buy from smm-eu.com"></p>
+                            <h3 class="color-black">How to Create TikTok Reels?</h3>
+                            <p class="dark_text">There are two options for creating TikTok Reels</p>
+                            <ol>
+                                <li>Click on the reels icon at the bottom of the TikTok app.</li>
+                                <li>Click on plus sign on “Your Story,” then click on the setting icon and select Reels.
+                                </li>
+                            </ol>
+                            <p class="dark_text">After recording your reels video or uploading it from the gallery, you
+                                can use the built-in video editor of TikTok to add effects, music, slow motion effects,
+                                and various other options.</p>
+                            <h2 class="section-heading-article">What are TikTok Reels Views?</h2>
+                            <p class="dark_text">In simple words, engagement with the audience. TikTok has 1.22 billion
+                                monthly active users, which is increasing daily. After launching TikTok Reels, there was
+                                an 11.4% increase in downloads for the TikTok app. From this, you can understand how
+                                popular TikTok Reels are.</p>
+                            <p class="dark_text">If you open any profile on TikTok, under the reels icon, you can find
+                                all uploaded reels videos by users, and there you can see how many views every video
+                                got. The number of <b>reels views</b> indicates how much engagement the video has and
+                                how much value that video adds to the profile.</p>
+                            <h3 class="color-black">What Counts As A View On IG Reels?</h3>
+                            <p class="dark_text">On TikTok Reels, a view is only counted if the video has been watched
+                                for at least 3 seconds. It means that if someone scrolls, finds a reel, and watches it
+                                for less than 3 seconds, it won't count as a view. However, if someone watches the Reel
+                                for 3 seconds or more, it will count as a view and be included in the view count. TikTok
+                                Reels also track views from individual accounts, meaning it will only count as one view
+                                if the same person watches the same reel multiple times.</p>
+                            <h2 class="section-heading-article">Reasons to Buy TikTok Reels Views</h2>
+                            <img src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/exclusive-quality-buy-ig-reel-views.png"
+                                width="200" height="200" class="img-fluid rounded float-right"
+                                alt="Buy ig reel views - exclusive quality"
+                                title="buy exclusive quality of ig reel views">
+                            <p class="dark_text">Remember! Engagement on social media is extremely important, and TikTok
+                                Reels are different from stories. It will stay permanently on your profile under the
+                                reels tab. You have to be creative and create quality content. Whenever visitors or
+                                potential clients visit your personal or business profile, they can see all your reels
+                                and get an idea of how much engagement and interaction you bring with your reels video
+                                views.</p>
+                            <p class="dark_text">If you have many <b>reel video views</b>, visitors trust your business
+                                and are more likely to follow your account. In this matter, <a
+                                    href="https://smm-eu.com/" title="smm-eu.com">Smm-eu.com</a> will help you to grow
+                                your reels video views. You can <b>buy TikTok Reels views</b> with instant delivery and
+                                up to 1 million views.</p>
+                            <h2 class="section-heading-article">How to Buy TikTok Reels Views?</h2>
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <p class="dark_text"><img
+                                            src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/how-to-buy-TikTok-reel-views.png"
+                                            width="450" height="450" class="img-fluid rounded float-left"
+                                            alt="how to buy TikTok reel views"
+                                            title="step by step guide to buy TikTok reel views"></p>
+                                </div>
+                                <div class="col-lg-7">
+                                    <p class="dark_text">You can buy TikTok Reels views in just three clicks using our
+                                        advanced and user-friendly checkout system. All you need to do is follow the
+                                        steps mentioned below.</p>
+                                    <ol>
+                                        <li><strong class="color-black">Select Package</strong>: Select your desired
+                                            TikTok Reels views package from above.</li>
+                                        <li><strong class="color-black">Enter Details</strong>: Enter your TikTok
+                                            username and email address, then click next to select your reel.</li>
+                                        <li><strong class="color-black">Views Delivered</strong>: Check order details,
+                                            checkout, sit back, relax, and enjoy the magic.</li>
+                                    </ol>
+                                    <p class="dark_text"><b>Important Note</b>: Please ensure that your TikTok account
+                                        is set to public before buying Reel views, and keep it public until the views
+                                        are delivered.</p>
+                                </div>
+                            </div>
+                            <h2 class="section-heading-article">Why Choose Smm-eu.com for Buying Reels Views?</h2>
+                            <p class="dark_text">We have a team with eight years of experience in social media marketing
+                                who understand how the TikTok algorithm works, and we are standing among the top service
+                                providers. We not only provide reels views, but we also provide <a
+                                    href="https://smm-eu.com/" title="TikTok followers">TikTok followers</a>, <a
+                                    href="https://smm-eu.com/" title="TikTok likes">likes</a>, and <a
+                                    href="https://smm-eu.com/" title="TikTok custom comments">custom comments</a>.</p>
+                            <p class="dark_text">Smm-eu.com offers the following features when you <strong>buy TikTok
+                                    Reels views</strong>.</p>
+                            <ol>
+                                <li><strong>Affordable Prices (lower in the entire market)</strong>:We stand alone in
+                                    the market as the sole provider offering highly affordable prices without
+                                    compromising on quality. Rest assured, we guarantee the delivery of only
+                                    high-quality views, which will significantly enhance your visibility.</li>
+                                <li><strong>Authentic Views (from Real accounts)</strong>:Whether you purchase 1000
+                                    views or 10 million reel views, we assure you of receiving genuine views from real
+                                    TikTok accounts. Our reputation is built on prioritizing quality over quantity.</li>
+                                <li><strong>Instant Delivery</strong>:Once your order is successfully paid, our
+                                    automated system will start processing it immediately. Within a matter of seconds to
+                                    minutes, you will begin to receive views on your TikTok reel.</li>
+                                <li><strong>Money-Back Guarantee</strong>:We are the only ones in the entire market who
+                                    offer a money-back guarantee without asking a single question. If your order is
+                                    delayed or not delivered within the promised time, you will receive a 100% full
+                                    refund. Smm-eu.com has built its reputation on providing both quality and speed.
+                                </li>
+                                <li><strong>Permanent Views</strong>:Concerned about losing views over time? Many of our
+                                    clients have experienced this issue with other vendors and returned to us solely for
+                                    this reason. At Smm-eu.com, we provide an ironclad guarantee that our views are
+                                    permanent and will never drop.</li>
+                                <li><strong>100% Safe and Secure</strong>:Rest assured that our system is securely
+                                    protected by 256-bit SSL encryption, and we never store any of your payment
+                                    information. All payment transactions are directly handled by our payment gateway,
+                                    which ensures the highest level of security by transmitting all details through the
+                                    256-bit SSL, PCI, and DSS systems.</li>
+                                <li><strong>Mind Satisfaction</strong>:Every order of TikTok reel views includes a
+                                    guarantee of complete satisfaction. We assure you that you will receive genuine
+                                    views on your TikTok reel, which, in turn, will help boost your engagement rate and
+                                    increase your chances of obtaining <a href="https://smm-eu.com/"
+                                        title="buy TikTok reel likes">more likes on your TikTok Reels</a>.</li>
+                                <li><strong>24/7 Customer Support</strong>:Our in-house team of experienced customer
+                                    support professionals is available online around the clock. Rest assured that
+                                    whenever you encounter an issue or have a query, we will be readily available to
+                                    provide instant solutions. This is precisely why Smm-eu.com is renowned: instant
+                                    delivery, guaranteed real views, and a dedicated customer support team always at
+                                    your service.</li>
+                            </ol>
+
+                            <div style="max-width: 580px; margin: 30px auto 20px auto">
+                                <div class="exfvideo">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N3yD8iSHcGE"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="questions" id="faq">
+        <div class="questions__wrapper">
+            <div class="container">
+                <h4 align="center" class="section-heading color-black">Frequently Asked Questions</h4>
+                <p align="center" class="paragraph dark">We have served more than 47000 clients. The customer trusts us
+                    as the best website which delivers real TikTok Reels views.</p>
+                <div class="row">
+                    <p></p>
+                </div>
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <div id="accordion">
+                            <div class="card" id="card-1">
+                                <div class="card-header" id="heading-1">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>What is the best website
+                                            to buy TikTok Reels views in 2023?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-1" class="collapse show" aria-labelledby="heading-1"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Smm-eu.com is the <strong>best website to get reel views in
+                                                2023</strong> due to its quality, real views, instant delivery speed,
+                                            affordable prices where quality doesn’t compromise, and determination to
+                                            serve our clients with the highest industry standards.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-2">
+                                <div class="card-header" id="heading-2">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>How can I buy IG reel
+                                            views?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-2" class="collapse" aria-labelledby="heading-2"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Yes, buying TikTok reel views from Smm-eu.com is very easy
+                                            now. Please select your desired TikTok reel package from above, enter your
+                                            TikTok profile username, and we will show your entire reel video. Select
+                                            your targeted reel and complete a successful checkout. Remember, we offer
+                                            <strong>instant delivery of views</strong> from real accounts to increase
+                                            the visibility and reach of your TikTok Reels, which can bring your reels to
+                                            the TikTok Explore page.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-3">
+                                <div class="card-header" id="heading-3">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>How to get 5000 views on
+                                            TikTok reel?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-3" class="collapse" aria-labelledby="heading-3"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">To obtain 5000 views on your Reel, there are several
+                                            effective strategies you can employ to maximize visibility. These include
+                                            utilizing relevant hashtags, crafting engaging captions, incorporating
+                                            high-quality visuals and audio. Collaborating with other creators, posting
+                                            at optimal times, and promoting your Reel on additional social media
+                                            platforms can further contribute to increasing views. <strong>SOUNDS
+                                                IMPOSSIBLE! RIGHT?</strong> In less than 5 minutes, you can get 5000
+                                            TikTok reel views through our specialized package, which guarantees views
+                                            from real users. Take a look at our <a href="https://smm-eu.com/"
+                                                title="5000 reel views">5000 reel views</a> package for more details.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-4">
+                                <div class="card-header" id="heading-4">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>How to get 1 million
+                                            views on reels?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-4" class="collapse" aria-labelledby="heading-4"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">At Smm-eu.com, we offer a unique opportunity to <a
+                                                href="https://smm-eu.com/" title="1m reel views">buy 1 million TikTok
+                                                reel views</a>. Our service guarantees that you will receive genuine
+                                            reel views from real users, resulting in increased engagement and effective
+                                            targeting of your desired audience. Additionally, our instant delivery
+                                            service enables you to attract a larger fan following, more likes and
+                                            comments, and significantly enhance the overall impressions on your TikTok
+                                            posts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-5">
+                                <div class="card-header" id="heading-5">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Does my account gets
+                                            banned if I buy TikTok reel views?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-5" class="collapse" aria-labelledby="heading-5"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">We strictly provide real TikTok Reel views from real
+                                            accounts. Our system undergoes continuous updates and adjustments to ensure
+                                            the instant delivery of authentic reel views, guaranteeing satisfactory
+                                            results and engagement. Therefore, you can confidently use our services
+                                            without violating any of TikTok's terms and conditions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-6">
+                                <div class="card-header" id="heading-6">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>What is the speed of
+                                            delivery for reel views?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-6" class="collapse" aria-labelledby="heading-6"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Once your order is successfully placed, our system will
+                                            initiate the process immediately, allowing you to receive your reel views
+                                            within just a few minutes, and sometimes even instantly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-7">
+                                <div class="card-header" id="heading-7">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Is there any drop in
+                                            reels views?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-7" class="collapse" aria-labelledby="heading-7"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">No, this will never happen with Smm-eu.com services. We
+                                            only provide real views from real accounts. You have a money-back guarantee
+                                            and even a refill guarantee if any view drops.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-8">
+                                <div class="card-header" id="heading-8">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-8" aria-expanded="true" aria-controls="collapse-8">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can anyone know that I
+                                            bought TikTok Reels views?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-8" class="collapse" aria-labelledby="heading-8"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">We provide 100% customer privacy and guarantee that we will
+                                            never share your data with anyone, and no one will ever know that you have
+                                            bought TikTok Reels views from us.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-9">
+                                <div class="card-header" id="heading-9">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-9" aria-expanded="true" aria-controls="collapse-9">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Do I need to make my
+                                            profile public to get reel views?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-9" class="collapse" aria-labelledby="heading-9"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Yes, we require your TikTok account or profile to be set to
+                                            public only during the duration of reel views delivery. Once you have
+                                            received the views, you are free to switch your account back to private.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-10">
+                                <div class="card-header" id="heading-10">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-10" aria-expanded="true" aria-controls="collapse-10">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can I buy TikTok Reels
+                                            likes also?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-10" class="collapse" aria-labelledby="heading-10"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Certainly, you have the option to buy reel likes through
+                                            our <a href="https://smm-eu.com/" title="reel likes">TikTok reel likes
+                                                service</a>. We pride ourselves on being a one-stop solution for all
+                                            your TikTok marketing requirements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-11">
+                                <div class="card-header" id="heading-11">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-11" aria-expanded="true" aria-controls="collapse-11">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can I buy video views
+                                            instead of reels views?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-11" class="collapse" aria-labelledby="heading-11"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Yes you can. If you have already posted videos on your
+                                            profile, you have the opportunity to <a href="https://smm-eu.com/"
+                                                title="buy TikTok views">buy TikTok views</a> for your videos directly
+                                            on Smm-eu.com. We recommend exploring our views section for more details.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients-sec" id="feedback">
+        <div class="container">
+            <h4 class="section-heading color-black">Customer Feedback and Reviews</h4>
+            <p align="center" class="paragraph dark">The customer is king, and we know how to serve our king. Our
+                Customer service is available 24/7.</p>
+            <div class="row">
+                <p></p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="content text-center">
+                    <div class="ratings"> <span class="product-rating">4.9</span><span>/5</span>
+                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                        <div class="rating-text"> <span>4.9 ratings from 36 reviews</span> </div>
+                    </div>
+                    <div class="btn">
+                        <a href="#" class="readon">Submit Your Reviews</a>
+                    </div>
+                    <div class="row">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p></p>
+            </div>
+            <div class="testimonial__wrapper">
+                <div class="exp_testimonial" style="height: 600px; width: 100%; overflow-y: scroll;">
+                    <div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Isabel</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I purchased 100k reel views, divided between two
+                                            reel videos, and received them in just a few minutes. Hats off to you guys!
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Alfonso Feist</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I have found this website to be the #1 choice in
+                                            terms of delivering reel views, specially the engagement I received after
+                                            the order was delivered.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">John Tindall</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">The Customer Support team is one of the best I have
+                                            ever seen. I received my order in just a few minutes and even got double the
+                                            number of reel views that I had ordered.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Edwin Doyle</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Thank you Smm-eu.com support team for providing me
+                                            2500 extra reel views.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Juan Nichols</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Smm-eu.com is definitely one of the best websites
+                                            for reel views. I received my 25,000 reel views in just a few minutes.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Roger Kyle</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Purchased TikTok Reels views from Smm-eu.com, and
+                                            they delivered it quickly.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Angelina Stacy</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Personally I found Smm-eu.com is the best website to
+                                            buy IG reel views instantly. Bought 50,000 reel views and got in just few
+                                            minutes. 5 stars</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">J. Dockery</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">A very happy client, glad that I came across
+                                            Smm-eu.com!. Real quality IG reel views.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Deborah</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Thank you for boosting my online engagement and
+                                            providing extra reel views.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">D. Buchheit</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">If you want to buy TikTok reel views, Smm-eu.com is
+                                            the champion in this service!</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Peter Holloway</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">The quality at Smm-eu.com is unmatched, especially
+                                            for TikTok services.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Swanson</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Impressed with the quality of TikTok reel views.
+                                            Purchasing TikTok Reels views is like counting fingertips now.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Clifford</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">You guys offer fantastic TikTok services, and I like
+                                            IG reels views. I am giving five stars for this. </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Isenberg J.</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">The support team was very helpful in guiding me
+                                            through the purchasing process.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Janet S.</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">My TikTok Reels video views skyrocketed after
+                                            buying. I highly recommend it!</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Shelley Eades</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I hesitated to buy TikTok Reels views, but
+                                            Smm-eu.com gave me real users who watched my views.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Shu Beckman</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I recommend Smm-eu.com for anyone looking to
+                                            purchase TikTok reel views.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Sherry Moore</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Smm-eu.com offers the best TikTok views service for
+                                            instantly buying views.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Eveline Gallegos</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">The delivery speed and organic views blew me away.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Christine Anderson</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">If you're a reels creator, smm-eu.com can help
+                                            increase your TikTok reel views.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Billie Sydow</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Thank you for providing me with quality service and
+                                            delivery on time.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Ted D.</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I was amazed by the number of people who watched my
+                                            TikTok reel views after purchasing.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Walker</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">TikTok reel views are the real deal to bring more
+                                            views overnight.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Norman Pena</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">The engagement I received from my TikTok Reels video
+                                            views was incredible.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Charles Tokarz</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I'm so happy with my purchase of TikTok reel views
+                                            to gain popularity from smm-eu.com.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Hampton</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Smm-eu.com made the purchasing process a breeze.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Larry P.</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Smm-eu.com is the go-to for anyone looking to buy
+                                            TikTok reel views.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Gary Smith</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I've tried other TikTok views services, but
+                                            smm-eu.com is the best, with very high quality services.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Marjorie Murrell</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">My reels video got a huge boost in views after
+                                            purchasing. I have highly recommended.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Carol Clark</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">If you're looking for organic views, smm-eu.com is
+                                            the only option.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Richard Spencer</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I can't believe how many real users watched my
+                                            TikTok Reels video after purchasing views. 100% Satisfied client.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Mandy Rash</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">smm-eu.com provides an excellent service for
+                                            purchasing TikTok reel views.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Wright</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">The support team at smm-eu.com is always there to
+                                            help with any questions or concerns.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Edward D.</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I recommend smm-eu.com to anyone looking to increase
+                                            their TikTok views.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Gaston Mims</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">The online engagement I received from my purchased
+                                            TikTok reel views was fantastic.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Keith Legault</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">smm-eu.com is my go-to for all my TikTok reel views
+                                            needs.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

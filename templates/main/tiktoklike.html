@@ -1,0 +1,1244 @@
+{% extends 'base.html' %}
+
+{% block title %}Live subscribers, likes, video views{% endblock %}
+{% block content %}
+        <section class="hero hero-2">
+        <div align="center" class="hero__wrapper">
+            <div class="container">
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <h1 class="main-heading color-black">Buy TikTok Likes Instantly!</h1>
+                        <p class="paragraph">At <span>Smm-eu.com<sup>TM</sup></span>, buy real TikTok likes instantly
+                            with just three clicks.</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="content text-center">
+                                <div class="ratings">
+                                    <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> </div>
+                                    <div class="rating-text"> <span>4.9 ratings from 28 reviews</span> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing" id="pricing">
+        <div class="pricing__wrapper">
+            <h2 align="center" class="package">Likes Packages</h2>
+            <div class="container">
+                <div class=" container-fluid pricingTable pt-90">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="inner d-flex tabsBtnHolder">
+                                    <ul style="display:none;">
+                                        <li>
+                                            <p id="monthly" class="active">Likes Packages</p>
+                                        </li>
+                                        <li>
+                                            <p id="yearly" class>Gender Base Likes</p>
+                                        </li>
+                                        <li class="indicator"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row monthlyPriceList animated">
+                            {% for price_field in list_tik_tok_like %}
+                            <div class="col-md-3">
+                                <div class="inner holder">
+                                    <div class="hdng">
+                                        <p>{{ price_field.count_field }} Likes</p>
+                                    </div>
+                                    <div class="price mt-5">
+                                        <p><b>${{ price_field.new_price }}</b></p>
+                                    </div>
+                                    <div class="info">
+                                        <p>Real Likes</p>
+                                        <p>Includes Video Views</p>
+                                        <p>Fast Delivery</p>
+                                        <p>Only Username Required</p>
+                                        <p>Privacy Protection</p>
+                                        <p>Customer Satisfaction</p>
+                                        <p>24/7 Support</p>
+                                        <p><b>Split Option Available</b></p>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="{% url 'main:instagramfolbuy' price_field.id %}" class="readon">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        {% endfor %}
+                        </div>
+                        <div class="row yearlyPriceList d-none animated">
+                            <div class="col-md-3">
+                                <div class="inner holder">
+                                    <div class="hdng">
+                                        <p>500 Female Likes</p>
+                                    </div>
+                                    <div class="price mt-5">
+                                        <p><b>$9.99</b></p>
+                                    </div>
+                                    <div class="info">
+                                        <p>Likes from Female Accounts</p>
+                                        <p>Includes Video Views</p>
+                                        <p>Fast Delivery</p>
+                                        <p>Only Username Required</p>
+                                        <p>Privacy Protection</p>
+                                        <p>Customer Satisfaction</p>
+                                        <p>24/7 Support</p>
+                                        <p><b>Split Option Available</b></p>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="https://expressfollowers.com/web/enter-username?package=273"
+                                            class="readon">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="inner holder">
+                                    <div class="hdng">
+                                        <p>1000 Female Likes</p>
+                                    </div>
+                                    <div class="price mt-5">
+                                        <p><b>$18.99</b></p>
+                                    </div>
+                                    <div class="info">
+                                        <p>Likes from Female Accounts</p>
+                                        <p>Includes Video Views</p>
+                                        <p>Fast Delivery</p>
+                                        <p>Only Username Required</p>
+                                        <p>Privacy Protection</p>
+                                        <p>Customer Satisfaction</p>
+                                        <p>24/7 Support</p>
+                                        <p><b>Split Option Available</b></p>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="https://expressfollowers.com/web/enter-username?package=275"
+                                            class="readon">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="inner holder">
+                                    <div class="hdng">
+                                        <p>500 Male Likes</p>
+                                    </div>
+                                    <div class="price mt-5">
+                                        <p><b>$9.99</b></p>
+                                    </div>
+                                    <div class="info">
+                                        <p>Likes from Male Accounts</p>
+                                        <p>Includes Video Views</p>
+                                        <p>Fast Delivery</p>
+                                        <p>Only Username Required</p>
+                                        <p>Privacy Protection</p>
+                                        <p>Customer Satisfaction</p>
+                                        <p>24/7 Support</p>
+                                        <p><b>Split Option Available</b></p>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="https://expressfollowers.com/web/enter-username?package=274"
+                                            class="readon">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="inner holder">
+                                    <div class="hdng">
+                                        <p>1000 Male Likes</p>
+                                    </div>
+                                    <div class="price mt-5">
+                                        <p><b>$18.99</b></p>
+                                    </div>
+                                    <div class="info">
+                                        <p>Likes from Male Accounts</p>
+                                        <p>Includes Video Views</p>
+                                        <p>Fast Delivery</p>
+                                        <p>Only Username Required</p>
+                                        <p>Privacy Protection</p>
+                                        <p>Customer Satisfaction</p>
+                                        <p>24/7 Support</p>
+                                        <p><b>Split Option Available</b></p>
+                                    </div>
+                                    <div class="btn">
+                                        <a href="https://expressfollowers.com/web/enter-username?package=276"
+                                            class="readon">Buy Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="step">
+        <div class="step__wrapper">
+            <div class="container">
+                <h2 class="section-heading color-black">How To Buy IG Likes?</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="step__box">
+                            <div class="content">
+                                <h3>STEP 1 <span>Package</span></h3>
+                                <p class="paragraph dark">We offer different TikTok likes packages, select your desired
+                                    package from above and click the buy now button.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="step__box">
+                            <div class="content">
+                                <h3>STEP 2 <span>Details</span></h3>
+                                <p class="paragraph dark">Enter your TikTok username, and email address, click next, and
+                                    select which post or video you want likes with free matching views.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="step__box">
+                            <div class="content">
+                                <h3>STEP 3 <span>Magic</span></h3>
+                                <p class="paragraph dark">Check your order details, click the checkout button, sit back,
+                                    relax, and enjoy our magic on your TikTok posts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing" id="pricing">
+        <div class="pricing__wrapper">
+            <div class="container">
+                <h2 class="section-heading color-black">Benefits of buying TikTok Likes</h2>
+                <div class="row">
+                    <p></p>
+                </div>
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <div class="paragraph dark">
+                            <p class="dark_text center"><img
+                                    src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/buy-TikTok-likes-instant-delivery.png"
+                                    class="img-fluid img-thumbnail" alt="Buy TikTok likes with instant delivery"></p>
+                            <p class="dark_text">TikTok is about brand awareness and recognition for businesses,
+                                influencers, and individuals. According to Statista, TikTok had 1.28 billion users in
+                                2022, which will grow to 1.6 billion by 2027. You must recognize this massive market;
+                                <strong>TikTok likes</strong> are the key to making the most of it.</p>
+                            <p class="dark_text">It is an excellent opportunity to engage with and grow an audience that
+                                benefits you directly, your sponsors, and more. Through TikTok, you can display your
+                                personality and showcase engaging daily activities to smm-eu.com yourself and your style
+                                to develop trust with your followers.</p>
+                            <h3 class="color-black">Target Audience</h3>
+                            <p class="dark_text">By building an audience and growing trust, anyone can spread their name
+                                to new demographics and stay connected with fans of individuals, influencers, or
+                                celebrities. However, it can be frustrating if you are new to TikTok or have an account
+                                but are struggling to gain a targeted audience. You need to increase engagement, <a
+                                    href="https://smm-eu.com/">likes</a>, and <a
+                                    href="https://smm-eu.com/">impressions</a> to benefit from how great TikTok can be.
+                            </p>
+                            <p class="dark_text">To solve this problem, Here comes, <a
+                                    href="https://smm-eu.com/">Smm-eu.com</a> with an option to <strong>buy TikTok
+                                    likes</strong> instantly to get your profile viral overnight and enjoy much more
+                                following benefits.</p>
+                            <p class="dark_text"><img
+                                    src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/buy-TikTok-likes-quality.png"
+                                    width="350" height="350" class="img-fluid rounded float-left"
+                                    alt="High quality TikTok likes"></p>
+                            <h3 class="color-black">Maximum Engagement</h3>
+                            <p class="dark_text">TikTok is evolving and constantly updating how it helps users discover
+                                new accounts to follow, which means it is getting more challenging to appear in users'
+                                TikTok Explore Page so new people can find you.</p>
+                            <p class="dark_text">With those constant changes to how the system works, there is only one
+                                way you can reliably reach those valuable Explore Page: having a massive number of likes
+                                and post views on your profile. That is why when you <a href="https://smm-eu.com/">buy
+                                    cheap TikTok likes</a>, it can boost your engagement.
+                            </p>
+                            <p class="dark_text">There is another factor to consider when you buy TikTok likes: people
+                                want to be associated with popular things. If you are getting lots of likes, not only
+                                does TikTok promote you in Explore Page, but more people pay attention to your content.
+                                It gives your brand a more approachable edge that others want to be a part of.</p>
+                            <p class="dark_text">In the early days, anyone could make a good impression on TikTok with
+                                their posts. Now TikTok restricts the posts on Explore Page to those with very high
+                                likes, impressions, and views. It can only be possible to succeed if you <strong>buy
+                                    likes on TikTok</strong>.</p>
+                            <h3 class="color-black">Activate TikTok Algorithm</h3>
+                            <p class="dark_text">How users interact with TikTok, including what they see and more, is
+                                shaped by the TikTok Algorithm. It was designed and continues to be refined for one
+                                purpose: <i>to keep users engaged for a longer time</i>. The more time people spend on
+                                TikTok, the more valuable they become to advertisers; this is a fact for all social
+                                media platforms.</p>
+                            <p class="dark_text">As soon as users login to their account to look at photos or videos or
+                                search for anything, what they have done is stored as data and user interest in TikTok.
+                                The next time they login or open the TikTok app, the algorithm uses that stored data to
+                                show only those posts linked to those interests, giving the user more of what they enjoy
+                                and want to see so that they stay on the site longer. </p>
+                            <p class="dark_text">This is a scenario where everyone wins. Because the user does get to
+                                see things they like, and that is what they came to TikTok for in the first place. Each
+                                time they visit, the items placed on their feed and Explore page are more accurately
+                                selected and more closely match what the user wants to see. It happens to all TikTok
+                                users every time they use the platform.</p>
+                            <p class="dark_text">But to take advantage of this as a business, individual, celebrities,
+                                influencer, or brand, you need TikTok posts that the algorithm will select to show those
+                                users. That means having very high engagement levels, especially TikTok likes. That is
+                                why you can activate the TikTok Algorithm to work for you when you <strong>buy TikTok
+                                    likes</strong>. Then, your TikTok posts get promoted to users interested in what
+                                your photos and posts are talking about.</p>
+                            <p class="dark_text">Quality TikTok posts about subjects the user already loves are sure to
+                                increase in engagement and like too, so while the journey may begin when you <a
+                                    href="https://smm-eu.com/">buy TikTok followers</a> and likes, once you harness the
+                                algorithm, you will enjoy the most successful organic growth TikTok users benefit from.
+                            </p>
+                            <p class="dark_text"> <b>Note:</b> TikTok algorithm chooses only those posts to show on
+                                explore page which has a massive amount of likes, impressions and have interactions with
+                                viewers.</p>
+                            <p class="dark_text"><img
+                                    src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/buy-real-TikTok-likes.png"
+                                    width="450" height="450" class="img-fluid rounded float-right"
+                                    alt="Buy real TikTok likes"></p>
+                            <h3 class="color-black">Brand Awareness</h3>
+                            <p class="dark_text">TikTok likes on your post act as positive reviews for your product and
+                                brand, show your profile credibility, and build trust with potential clients and fan
+                                following. That's why when you <strong>buy IG likes</strong>, you get likes, grow your
+                                brand, get maximum interaction, increase traffic, boost your profile, build trust and
+                                value, and attract more viewers to your brand page or profile. </p>
+                            <p class="dark_text"><strong>Pro Tip</strong>: Viewers will skip your post if it has not
+                                received enough IG likes, and the post will not be placed on the TikTok Explore page.
+                                It's highly recommended to buy TikTok likes, which can be essential to increase traffic
+                                and fan following to your personal and business TikTok accounts.</p>
+                            <h3 class="color-black">Increase Followers Count</h3>
+                            <p class="dark_text">Most users on TikTok spend their time on their "feeds" and "Explore
+                                page," interacting with others' content. While browsing on their explore page, if your
+                                post appears with a good number of likes, there is much more chance of that person
+                                checking out your profile and seeing what else you have to offer.</p>
+                            <p class="dark_text">That is the best way to grow your audience, so when you buy likes on
+                                TikTok, you are helping others to see your posts and discover your profile, and then
+                                follow you. They still follow you organically because they want what you are posting, so
+                                you still get all the benefits of real followers; you can get them a little faster.</p>
+                            <p class="dark_text"><strong>Pro Tip</strong>: You must have a good fan following on your
+                                profile. For this, you can simultaneously <a href="https://smm-eu.com/">buy TikTok
+                                    followers</a> and likes to leave a good impression on viewers that you already have
+                                an established brand or are a successful influencer. There are no worries about
+                                following you.</p>
+                            <h2 class="section-heading-article">Why buy IG likes from Smm-eu.com?</h2>
+                            <p class="dark_text">With over seven years of experience in social media marketing, we know
+                                how to help you achieve your desired success. We have been assisting TikTok brands and
+                                influencers in reaching their goals for many years and have refined our process to
+                                perfection so that you can do so confidently when you buy real TikTok likes.</p>
+                            <p class="dark_text">Like TikTok, we constantly update and tweak our system to provide you
+                                with a seamless and hassle-free experience so that you can buy likes as quickly as
+                                possible. We understand that you are unique and offer a flexible approach that makes us
+                                the best place to buy TikTok likes today, with options to suit every situation.
+                                Including:</p>
+                            <h3 class="color-black">Split TikTok Likes:</h3>
+                            <p class="dark_text">This option allows you to buy TikTok likes and then split your package
+                                across all of your posts or selected posts that you choose from your profile. When you
+                                enter your username, we will display all your posts, and from there, you can select how
+                                many posts you would like and how many likes you want on them.</p>
+                            <p class="dark_text">Not only is that very effective for your profile, but it is the easiest
+                                way to buy likes on TikTok and spread them among your posts for a natural look to your
+                                growth.</p>
+                            <p class="dark_text"><img
+                                    src="https://testhostdomain7733.miy.link/wp-content/themes/kadence/assets/images/buy-TikTok-likes-instantly.png"
+                                    width="450" height="450" class="img-fluid rounded float-left"
+                                    alt="Buy real TikTok likes"></p>
+                            <h3 class="color-black">Instant Delivery:</h3>
+                            <p class="dark_text">The best thing about our system is that you will see the results
+                                immediately when you complete your payment and your order is placed successfully. After
+                                you buy TikTok likes from us, our system will start working on your likes order within
+                                seconds, and your posts will get high quality likes in just a few seconds to a few
+                                minutes. </p>
+                            <h3 class="color-black">Affordable Prices:</h3>
+                            <p class="dark_text">We offer the best prices when you buy TikTok likes, <a
+                                    href="https://smm-eu.com/">followers</a>, or both. Because our goal is to help you
+                                achieve the success you deserve, we ensure that our services are incredibly affordable,
+                                beating our competitors in pricing and quality of our likes. Now you can <strong>buy
+                                    cheap TikTok likes</strong> starting from just $1.45 for <a
+                                    href="https://smm-eu.com/">100 likes</a>.</p>
+                            <p class="dark_text">Our flexible service means you can <a href="https://smm-eu.com/">buy 50
+                                    TikTok likes</a>, 100 or more, whatever your budget allows. For less money, you can
+                                <a href="https://smm-eu.com/">buy 25 TikTok likes</a> and begin your journey to success,
+                                and if you want to try out the service to see how it works, you can <a
+                                    href="https://smm-eu.com/">buy 10 TikTok likes</a> in a package as a great way to
+                                see the benefit of our service for your profile.</p>
+                            <p class="dark_text"><strong>Note</strong>: We will never compromise on the quality of IG
+                                likes, even though we offer low prices and always be more significant than our
+                                competitors.</p>
+                            <h3 class="color-black">Money-Back Guarantee:</h3>
+                            <p class="dark_text">We provide a full money-back guarantee if any of our provided TikTok
+                                likes drop or your order gets delayed. When you buy TikTok likes from us, you always get
+                                a no-question money-back guarantee. Our IG likes are non-dropped, and in case any TikTok
+                                likes get dropped, you can get a free refill within the warranty time instead.</p>
+                            <h3 class="color-black">Privacy Protection:</h3>
+                            <p class="dark_text">The customer is king to us; we take privacy very seriously. We will
+                                never ask for your password or any other private information. All we need is the TikTok
+                                username of the account you want to place a likes order and your email address. Your
+                                privacy is 100% safe and secure, and we will never share your details with anyone else.
+                            </p>
+                            <h3 class="color-black">Secure Payment Gateway</h3>
+                            <p class="dark_text">At Smm-eu.com, we offer many different payment gateways to make the
+                                purchase process as simple as possible. Some payment options are PayPal, Credit Cards,
+                                Crypto, Payoneer, and web money. All our payment gateways are 100% secure with 256-bit
+                                SSL and PCI-DSS security. Furthermore, we never store any payment information.</p>
+                            <h3 class="color-black">Friendly Customer Support</h3>
+                            <p class="dark_text">Our friendly customer support team is available 24/7 online to answer
+                                all your questions and queries. Please don't hesitate to contact us if you have
+                                questions or want a custom tailor-made order to buy likes.</p>
+
+                            <div style="max-width: 580px; margin: 30px auto 20px auto">
+                                <div class="exfvideo">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/N3yD8iSHcGE"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="questions" id="faq">
+        <div class="questions__wrapper">
+            <div class="container">
+                <h2 align="center" class="section-heading color-black">Frequently Asked Questions</h2>
+                <p align="center" class="paragraph dark">We have served more than 47000 clients. The customer trusts us
+                    as the best website which delivers real active TikTok instant likes.</p>
+                <div class="row">
+                    <p></p>
+                </div>
+                <div class="row align-items-lg-center">
+                    <div class="col-lg-12 order-2 order-lg-1">
+                        <div id="accordion">
+                            <div class="card" id="card-1">
+                                <div class="card-header" id="heading-1">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Which is the best site
+                                            to buy TikTok likes safely in 2023?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-1" class="collapse show" aria-labelledby="heading-1"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">As stated above, Smm-eu.com is only the best website to buy
+                                            cheap TikTok likes in 2023 because we offer instant delivery, a split option
+                                            to spread IG likes across multiple pictures and posts, affordable prices, a
+                                            money-back guarantee, privacy protection, and a friendly customer support
+                                            team.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-16">
+                                <div class="card-header" id="heading-3">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can I buy real TikTok
+                                            likes?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-16" class="collapse" aria-labelledby="heading-3"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Yes, you can! At smm-eu.com, you can buy real TikTok likes
+                                            from real accounts. Our platform ensures authentic TikTok growth and
+                                            engagement, offering a reliable way to increase your TikTok presence to
+                                            attract followers.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-17">
+                                <div class="card-header" id="heading-3">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-17" aria-expanded="true" aria-controls="collapse-17">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can I buy female TikTok
+                                            likes?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-17" class="collapse" aria-labelledby="heading-3"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Yes, you can! At smm-eu.com, you can <strong>buy female
+                                                TikTok likes</strong> from worldwide female audience. Please select your
+                                            desired package, enter your TikTok username and go for checkout.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-18">
+                                <div class="card-header" id="heading-3">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-18" aria-expanded="true" aria-controls="collapse-18">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can I buy male TikTok
+                                            likes?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-18" class="collapse" aria-labelledby="heading-3"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Yes, you can! At smm-eu.com, you can <strong>buy male
+                                                TikTok likes</strong> from worldwide male audience. Please select your
+                                            desired package, enter your TikTok username and go for checkout.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-3">
+                                <div class="card-header" id="heading-3">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can I buy TikTok likes
+                                            and followers both at the same time?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-3" class="collapse" aria-labelledby="heading-3"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Yes, there is no issue with it, even though it's best
+                                            practice to buy TikTok likes and followers simultaneously to get a maximum
+                                            engagement rate and leave a good impression on viewers as an established
+                                            brand and successful influencer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-2">
+                                <div class="card-header" id="heading-2">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Which TikTok likes
+                                            service package should I buy?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-2" class="collapse" aria-labelledby="heading-2"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">We offer many packages at very affordable prices, starting
+                                            from 10 TikTok likes to 50,000 likes. You can select as per your desired
+                                            need, and we also provide a split option to spread these likes across your
+                                            other posts. Even now, we offer a <a href="https://smm-eu.com/">20 TikTok
+                                                likes</a> package as well.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-4">
+                                <div class="card-header" id="heading-4">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can I buy TikTok likes
+                                            with PayPal?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-4" class="collapse" aria-labelledby="heading-4"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">We have many different payment gateway options, i.e.,
+                                            PayPal, Crypto, Credit Cards, Payoneer, and Web Money. If you want to pay in
+                                            another currency, please get in touch.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-6">
+                                <div class="card-header" id="heading-6">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-6" aria-expanded="true" aria-controls="collapse-6">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Is Smm-eu.com safe?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-6" class="collapse" aria-labelledby="heading-6"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Yes, we are guaranteed safe with excellent service. As
+                                            stated above, we continue updating our system as per the new TikTok
+                                            algorithm and updates. Your account is 100% secure with us, as we never
+                                            violate any of TikTok's terms. We only provide real TikTok likes from real
+                                            TikTok accounts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-11">
+                                <div class="card-header" id="heading-11">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-11" aria-expanded="true" aria-controls="collapse-11">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Is it illegal to buy
+                                            real TikTok likes?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-11" class="collapse" aria-labelledby="heading-11"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">No, it's not illegal to buy IG likes. However, you must
+                                            <strong>buy real TikTok likes</strong> from authentic websites like
+                                            Smm-eu.com, which provides real IG likes. We only provide real TikTok likes
+                                            from the real account, so this will never be an issue.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-5">
+                                <div class="card-header" id="heading-5">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>What is the delivery
+                                            speed, and when will I get my order?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-5" class="collapse" aria-labelledby="heading-5"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Once your order is placed successfully, you will get your
+                                            order number. Our system will start working immediately, and you will get
+                                            high quality likes in just a few seconds to a few minutes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-7">
+                                <div class="card-header" id="heading-7">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-7" aria-expanded="true" aria-controls="collapse-7">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Is there any automatic
+                                            TikTok likes option available?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-7" class="collapse" aria-labelledby="heading-7"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">Yes, we offer <a href="https://smm-eu.com/">TikTok auto
+                                                likes</a> for those who want to avoid buying real likes for every post.
+                                            Our automatic likes option provides you with likes as per your package for
+                                            an entire month (30 days).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-8">
+                                <div class="card-header" id="heading-8">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-8" aria-expanded="true" aria-controls="collapse-8">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>How much does it cost to
+                                            buy Likes on TikTok?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-8" class="collapse" aria-labelledby="heading-8"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">We have affordable, high-quality packages where you can buy
+                                            cheap TikTok likes without compromising quality. Our packages start from <a
+                                                href="https://smm-eu.com/">$1.45 for 100 likes</a> to get your TikTok
+                                            marketing to the next level. It's up to you to that which package you
+                                            desire.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-9">
+                                <div class="card-header" id="heading-7">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-9" aria-expanded="true" aria-controls="collapse-9">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Is there any Money back
+                                            guarantee?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-9" class="collapse" aria-labelledby="heading-9"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">We would offer a money-back guarantee only if your order
+                                            got delayed within warranty time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-10">
+                                <div class="card-header" id="heading-10">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-10" aria-expanded="true" aria-controls="collapse-10">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Will your likes help me
+                                            to get on the TikTok Explore page?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-10" class="collapse" aria-labelledby="heading-10"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">As stated above, more likes will increase your chances of
+                                            getting listed on the TikTok Explore page. Not only likes, but you also need
+                                            to increase interaction, such as TikTok comments and impressions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-12">
+                                <div class="card-header" id="heading-12">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-12" aria-expanded="true" aria-controls="collapse-12">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Is it easy to buy cheap
+                                            TikTok likes?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-12" class="collapse" aria-labelledby="heading-12"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">It is effortless as 1,2,3. Our system enabled you to buy
+                                            likes in just three steps. Select the package, enter your username, and
+                                            checkout. Even there is no need to sign up or fill out any survey.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-13">
+                                <div class="card-header" id="heading-13">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-13" aria-expanded="true" aria-controls="collapse-13">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>I have a concern about
+                                            my privacy.
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-13" class="collapse" aria-labelledby="heading-13"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">As stated above, we will never share your details with
+                                            anyone, even if we never ask for private information. We need your TikTok
+                                            username to deliver the order and your email address to send you your order
+                                            details.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-14">
+                                <div class="card-header" id="heading-4">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-14" aria-expanded="true" aria-controls="collapse-14">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can you buy 10 likes on
+                                            TikTok?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-14" class="collapse" aria-labelledby="heading-4"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">You can now buy even 10 TikTok likes to get authentic
+                                            engagement. You can check our <a href="https://smm-eu.com/">10 TikTok
+                                                likes</a> package, and we guarantee that there will be no likes from bot
+                                            accounts or fake likes from fake followers.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="card-15">
+                                <div class="card-header" id="heading-13">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link btn-link2" data-toggle="collapse"
+                                            data-target="#collapse-13" aria-expanded="true" aria-controls="collapse-13">
+                                            <i class="fa fa-chevron-down tabs-drop-iconbox"></i>Can I buy 20 TikTok
+                                            likes instantly?
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse-15" class="collapse" aria-labelledby="heading-13"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="paragraph">You can <a href="https://smm-eu.com/">buy 20 TikTok
+                                                likes</a> with instant delivery as we offer guaranteed delivery from
+                                            real TikTok accounts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients-sec" id="feedback">
+        <div class="container">
+            <h2 class="section-heading color-black">Customer Feedback and Reviews</h2>
+            <p align="center" class="paragraph dark">The customer is king, and we know how to serve our king. Our
+                Customer service is available 24/7.</p>
+            <div class="row">
+                <p></p>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="content text-center">
+                    <div class="ratings"> <span class="product-rating">4.9</span><span>/5</span>
+                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                        <div class="rating-text"> <span>4.9 ratings from 28 reviews</span> </div>
+                    </div>
+                    <div class="btn">
+                        <a href="#" class="readon">Submit Your Reviews</a>
+                    </div>
+                    <div class="row">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p></p>
+            </div>
+            <div class="testimonial__wrapper">
+                <div class="exp_testimonial" style="height: 600px; width: 100%; overflow-y: scroll;">
+                    <div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Judy Varner</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">First, to try smm-eu.com services, I bought 100
+                                            likes package. Got likes in just few seconds, really impressed with quality.
+                                            Then went to buy 25000 likes packages. Now a permanent and happy client. 5
+                                            Stars from my side.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Kevin Collins</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Great, good work, and highly recommended.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Lance Guyer</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Fantastic, great work.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Beatrice Callaway</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I recently purchased TikTok likes from smm-eu.com
+                                            and I am thrilled with the results! The high-quality likes helped increase
+                                            social proof and engagement on my posts, boosting my overall profile
+                                            visibility. The delivery was quick, and the pricing was reasonable. I highly
+                                            recommend this service to anyone looking to improve their social media
+                                            presence. Thank you, smm-eu.com!</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Angelina</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Smm-eu.com rocks.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Shirley</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">TikTok is undoubtedly the number one among all
+                                            social media networks, and smm-eu.com is the top platform for buying TikTok
+                                            likes from real people.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Juanita</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Perfect work, order #13079581457.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Brent Smith</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Extremely happy with the service I received from
+                                            Smm-eu.com. They delivered real TikTok likes promptly, which helped increase
+                                            my TikTok popularity. Highly recommend!</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Richard Hagerman</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I purchased 50 TikTok likes from Smm-eu.com and was
+                                            impressed by their quick delivery and the quality of the likes. It boosted
+                                            my TikTok content visibility and engagement, and I recommend their services
+                                            to anyone looking to increase their TikTok presence.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Jerrold Johnson</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Got my likes in just 6 minutes. Perfect!</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Lawrence Henson</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I have created a new TikTok account for my Amazon
+                                            product and am using Smm-eu.com to acquire high-quality likes from real
+                                            users. I am highly satisfied with the TikTok services.</div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Elisa Smith</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I recently purchased a package from Smm-eu.com and
+                                            am very satisfied. They gave me high-quality TikTok likes, and their other
+                                            services, such as views and followers, were exceptional. Highly recommend
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Lisa Moore</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I had a great experience with Smm-eu.com! Their
+                                            services helped boost my social media growth by purchasing likes from my
+                                            target audience, leading to more engagement and visibility. Highly
+                                            recommend!
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Nick Villarreal</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Got my 100 likes almost instantly. Great work. 5
+                                            stars out of 5.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Manuela Emerson</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I have posted high-quality content but have not
+                                            received likes from interested users. Then, I tried the TikTok services
+                                            provided by smm-eu.com. All my posts have received maximum engagement, and I
+                                            highly recommend smm-eu.com for buying TikTok likes.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Michael Payne</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I was looking to buy likes and followers to increase
+                                            engagement metrics. Only smm-eu.com deliver real TikTok likes from real
+                                            people and from real users.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Manuel Griggs</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Thank you support team for solving my TikTok likes
+                                            order issue. It was a little delay due to my account was private. Now got
+                                            all likes.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Nicole Snelling</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">As a social media expert handling multiple social
+                                            media accounts for many clients, I highly recommend smm-eu.com for buying
+                                            likes and social proof. It's quick, easy, and delivers results.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Iris Jr</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">five stars for your likes quality.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Carlton Taylor</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Express your way to a bigger following with
+                                            smm-eu.com! Their premium likes can help you gain new followers for just a
+                                            few dollars. Highly recommend!" #getpremiumlikes #newfollowers #smmeucom
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Stuart Parnell</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Thank you to the support team for giving me more
+                                            followers than I ordered. They deserve 5 out of 5 stars.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Michael Hernandez</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Smm-eu.com offers reliable TikTok marketing
+                                            services. I was impressed with their quick delivery and buying likes, and I
+                                            highly recommend them for all your social media needs!
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Rene Daniels</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Smm-eu.com delivered as many TikTok likes as
+                                            promised, even more than ordered and satisfied with the service.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Harold Hurt</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I have tried Smm-eu.com for free TikTok likes and
+                                            received real likes from real people. Smm-eu.com is renowned not only for
+                                            its free likes but also for its other services.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Enrique Wilson</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">I have tried the 50 TikTok likes package from
+                                            Smm-eu.com and found no fake accounts providing the likes. Got likes from
+                                            real users.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Bobbie Pleas</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">All the likes are from genuine TikTok users.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Robinson</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">Highly recommended, works perfectly!
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide p-12">
+                            <div class="card_test">
+                                <div class="card-body">
+                                    <div class="testimonial">
+                                        <div class="rr_review_name">Kenneth L</div>
+                                        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                                        <div class="clear"></div>
+                                        <div class="rr_review_text">The best part which I like is the split option
+                                            offered by smm-eu.com. With just one order, I can receive likes on five
+                                            different posts.
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
