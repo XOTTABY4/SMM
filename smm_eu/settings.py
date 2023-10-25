@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-!5535%cw1576jfz$9y^1c)ss1!wyqx0$07raq7@cey3@er%+&n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['wellbeingonline.online']
+ALLOWED_HOSTS = ['127.0.0.1' , '8000-xottaby4-smm-c9qhbn39ej5.ws-eu105.gitpod.io']
 
 #For Django Debug Panel
 INTERNAL_IPS = []
