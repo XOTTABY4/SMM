@@ -30,40 +30,6 @@
         <div class="pricing__wrapper">
             <h2 align="center" class="package">Likes Packages</h2>
             <div class="container">
-                <div align="center">
-                    <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">
-                        Why ExpressFollowers?
-                    </button>
-                </div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Why ExpressFollowers?</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <b>ExpressFollowers is #1 to buy likes for the following reasons</b>
-                                <p>
-                                <ol>
-                                    <li>Real quality Instagram likes</li>
-                                    <li>Instant order starts</li>
-                                    <li>Affordable prices</li>
-                                    <li>Maximum Engagement</li>
-                                    <li>Activate Instagram Algorithm</li>
-                                    <li>Brand Awareness</li>
-                                    <li>Increase Followers Count</li>
-                                    <li>Money-Back Guarantee</li>
-                                    <li>24/7 Customer Support</li>
-                                </ol>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class=" container-fluid pricingTable pt-90">
                     <div class="container">
                         <div class="row">
@@ -78,13 +44,14 @@
                             </div>
                         </div>
                         <div class="row monthlyPriceList animated">
+                            {% for price_field in list_inst_like %}
                             <div class="col-md-3">
                                 <div class="inner holder">
                                     <div class="hdng">
-                                        <p>500 Likes</p>
+                                        <p>{{ price_field.count_field }} Likes</p>
                                     </div>
                                     <div class="price mt-5">
-                                        <p><b>$5.99</b></p>
+                                        <p><b>${{ price_field.new_price }}</b></p>
                                     </div>
                                     <div class="info">
                                         <p>Real Likes</p>
@@ -97,177 +64,11 @@
                                         <p><b>Split Option Available</b></p>
                                     </div>
                                     <div class="btn">
-                                        <a href="/buy-500-likes-on-instagram/" class="readon">Buy Now</a>
+                                        <a href="{% url 'main:instagramlikebuy' price_field.id %}" class="readon">Buy Now</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>1000 Likes</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$8.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Likes</p>
-                                        <p>Includes Video Views</p>
-                                        <p>Fast Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>Customer Satisfaction</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>Split Option Available</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="/buy-1000-likes-on-instagram/" class="readon">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>2500 Likes</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$19.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Likes</p>
-                                        <p>Includes Video Views</p>
-                                        <p>Fast Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>Customer Satisfaction</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>Split Option Available</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="https://expressfollowers.com/buy-2500-instagram-likes/" class="readon">Buy
-                                            Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="off_banner populer_banner">★★ Hot Selling ★★</div>
-                                    <div class="hdng">
-                                        <p>5000 Likes</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$33.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Likes</p>
-                                        <p>Includes Video Views</p>
-                                        <p>Fast Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>Customer Satisfaction</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>Split Option Available</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="/buy-5000-likes-on-instagram/" class="readon">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>100 Likes</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$1.45</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Likes</p>
-                                        <p>Includes Video Views</p>
-                                        <p>Fast Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>Customer Satisfaction</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>No Split Option</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="https://expressfollowers.com/buy-100-likes-on-instagram/"
-                                           class="readon">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>10,000 Likes</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$58.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Likes</p>
-                                        <p>Includes Video Views</p>
-                                        <p>Fast Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>Customer Satisfaction</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>Split Option Available</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="https://expressfollowers.com/web/enter-username?package=26"
-                                           class="readon">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>25,000 Likes</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$119.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Likes</p>
-                                        <p>Includes Video Views</p>
-                                        <p>Fast Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>Customer Satisfaction</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>Split Option Available</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="https://expressfollowers.com/web/enter-username?package=118"
-                                           class="readon">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="inner holder">
-                                    <div class="hdng">
-                                        <p>50,000 Likes</p>
-                                    </div>
-                                    <div class="price mt-5">
-                                        <p><b>$199.99</b></p>
-                                    </div>
-                                    <div class="info">
-                                        <p>Real Likes</p>
-                                        <p>Includes Video Views</p>
-                                        <p>Fast Delivery</p>
-                                        <p>Only Username Required</p>
-                                        <p>Privacy Protection</p>
-                                        <p>Customer Satisfaction</p>
-                                        <p>24/7 Support</p>
-                                        <p><b>Split Option Available</b></p>
-                                    </div>
-                                    <div class="btn">
-                                        <a href="https://expressfollowers.com/web/enter-username?package=119"
-                                           class="readon">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                         <div class="row yearlyPriceList d-none animated">
                             <div class="col-md-3">
