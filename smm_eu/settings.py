@@ -16,8 +16,8 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 PROJECT_ROOT = os.path.dirname(__file__)
+PATH_TO_NOTEBOOK_DIR = os.path.join(PROJECT_ROOT, 'jyp')
 sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 
 # Quick-start development settings - unsuitable for production
@@ -37,6 +37,7 @@ INTERNAL_IPS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django_extensions',
     'main.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -59,6 +60,22 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'smm_eu.urls'
+
+try:
+    import jupyterlab
+    notebook_default_url = '/lab'  # Using JupyterLab
+except ImportError:
+    notebook_default_url = '/tree'  # Using Jupyter
+
+NOTEBOOK_ARGUMENTS = [
+    '--ip', '0.0.0.0',
+    '--port', '8888',
+    '--notebook-dir', PATH_TO_NOTEBOOK_DIR,
+    '--NotebookApp.default_url', notebook_default_url,
+]
+
+IPYTHON_KERNEL_DISPLAY_NAME = 'Django Kernel'
+
 
 TEMPLATES = [
     {
