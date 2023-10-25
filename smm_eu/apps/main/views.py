@@ -5,17 +5,25 @@ from django.http import Http404, HttpResponseRedirect
 
 def index(request):
     return render(request, 'main/main.html')
-
+##################################################################################################################
+######################################INSTAGRAME SECTION##########################################################
+##################################################################################################################
 def instagramfol(request):
     list_inst_fol = Products.objects.filter(type=1)
     return render(request, 'main/instagramfol.html', {'list_inst_fol': list_inst_fol})
 
 def instagramlike(request):
-    list_inst_like = Products.objects.filter(type=2)
+    list_inst_views = Products.objects.filter(type=2)
+    return render(request, 'main/instagramlike.html', {'list_inst_views': list_inst_views})
+
+def instagramautolike(request):
+    list_inst_auto_like = Products.objects.filter(type=3)
+    return render(request, 'main/instagramautolike.html', {'list_inst_auto_like': list_inst_auto_like})
+
+def instagramviews(request):
+    list_inst_like = Products.objects.filter(type=4)
     return render(request, 'main/instagramlike.html', {'list_inst_like': list_inst_like})
-##################################################################################################################
-######################################INSTAGRAME BUY VIEWS########################################################
-##################################################################################################################
+
 def instagramfolbuy(request, price_id):
     try:
         order_by_id_fol = Products.objects.get(id=price_id)
